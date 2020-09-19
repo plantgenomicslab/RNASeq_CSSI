@@ -1,11 +1,9 @@
 name: rnaseq
 channels:
-  - r
-  - conda-forge
   - bioconda
-  - etetoolkit
+  - r
   - defaults
-  - anaconda
+  - conda-forge
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=0_gnu
@@ -49,10 +47,10 @@ dependencies:
   - bz2file=0.98=py_0
   - bzip2=1.0.8=h516909a_2
   - c-ares=1.16.1=h516909a_3
-  - ca-certificates=2020.4.5.1=hecc5488_0
+  - ca-certificates=2020.6.20=hecda079_0
   - cachetools=4.1.1=py_0
   - cairo=1.16.0=h18b612c_1001
-  - certifi=2020.4.5.1=py36h9f0ad1d_0
+  - certifi=2020.6.20=py36h9f0ad1d_0
   - cffi=1.14.0=py36hd463f26_0
   - chardet=3.0.4=py36_1003
   - click=7.0=py_0
@@ -82,6 +80,7 @@ dependencies:
   - gcc_linux-64=7.3.0=h553295d_17
   - gdk-pixbuf=2.36.12=h3f25603_1005
   - gettext=0.19.8.1=hc5be6a0_1002
+  - gffread=0.12.1=h8b12597_0
   - gfortran_impl_linux-64=7.3.0=hdf63c60_5
   - gfortran_linux-64=7.3.0=h553295d_17
   - ghostscript=9.53.1=he1b5a44_0
@@ -173,13 +172,15 @@ dependencies:
   - olefile=0.46=py36_0
   - openjdk=11.0.1=h516909a_1016
   - openjpeg=2.3.1=h981e76c_3
-  - openssl=1.1.1g=h516909a_0
+  - openssl=1.1.1g=h516909a_1
   - pandas=1.0.3=py36h830a2c2_1
   - pango=1.40.14=he7ab937_1005
   - paramiko=2.7.2=pyh9f0ad1d_0
   - pcre=8.44=he1b5a44_0
   - perl=5.26.2=h516909a_1006
   - perl-app-cpanminus=1.7044=pl526_1
+  - perl-business-isbn=3.004=pl526_0
+  - perl-business-isbn-data=20140910.003=pl526_0
   - perl-carp=1.38=pl526_3
   - perl-constant=1.33=pl526_1
   - perl-cpan-meta=2.150010=pl526_0
@@ -198,6 +199,7 @@ dependencies:
   - perl-ipc-cmd=1.02=pl526_0
   - perl-json-pp=4.04=pl526_0
   - perl-locale-maketext-simple=0.21=pl526_2
+  - perl-mime-base64=3.15=pl526_1
   - perl-module-build=0.4224=pl526_3
   - perl-module-corelist=5.20190524=pl526_0
   - perl-module-load=0.32=pl526_1
@@ -209,7 +211,13 @@ dependencies:
   - perl-scalar-list-utils=1.52=pl526h516909a_0
   - perl-text-abbrev=1.02=pl526_0
   - perl-text-parsewords=3.30=pl526_0
+  - perl-uri=1.76=pl526_0
   - perl-version=0.9924=pl526_0
+  - perl-xml-libxml=2.0132=pl526h7ec2d77_1
+  - perl-xml-namespacesupport=1.12=pl526_0
+  - perl-xml-sax=1.02=pl526_0
+  - perl-xml-sax-base=1.09=pl526_0
+  - perl-xsloader=0.24=pl526_0
   - pigz=2.3.4=hed695b0_1
   - pillow=7.1.2=py36hb39fc2d_0
   - pip=20.0.2=py_2
@@ -246,6 +254,7 @@ dependencies:
   - r-base64enc=0.1_3=r36hcdcec82_1003
   - r-bh=1.72.0_3=r36h6115d3f_0
   - r-bibtex=0.4.2.2=r36hcdcec82_0
+  - r-biocmanager=1.30.10=r36h6115d3f_1
   - r-bit=1.1_15.2=r36hcdcec82_0
   - r-bit64=0.9_7=r36hcdcec82_1001
   - r-bitops=1.0_6=r36hcdcec82_1003
@@ -407,4 +416,4 @@ dependencies:
   - zipp=3.1.0=py_0
   - zlib=1.2.11=h516909a_1006
   - zstd=1.4.4=h3b9ef0a_1
-prefix: /data/gpfs/home/wyim/scratch/bin/miniconda3/envs/rnaseq
+prefix: /data/gpfs/home/flunalopez/miniconda3/envs/rnaseq
