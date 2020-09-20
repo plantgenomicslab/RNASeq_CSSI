@@ -64,9 +64,10 @@ os.makedirs('ref', exist_ok=True)
 
 rule all:
 	input:
+		"output/Final_analysis/diffExpr.P1e-3_C1.matrix",
 		"output/featureCount.cnt_for_tpm.tpm.tab",
 		expand("output/{rundeg_input}", rundeg_input = config["rundeg-output"]),
-		"output/featureCount.cnt",
+		#"output/featureCount.cnt.fixed",
 		expand("output/{sample}/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLE_LIST),
 		#expand("output/{sample}/{rundeg_input}", sample = SAMPLE_LIST, rundeg_input = config["rundeg-output"])
 		expand("output/{sample}/TRIM/{sample}_pass_2_val_2.fq.gz", sample = SAMPLE_LIST),
@@ -125,9 +126,9 @@ rule readscount:
 	input:
 		bam = expand("output/{sample}/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLE_LIST)
 	output:
-		ftcount = "output/featureCount.cnt"
+		ftcount = "output/featureCount.cnt.fixed"
 	shell:
-		"featureCounts -p -Q 10 -M --fraction -s 0 -T 16 -o output/featureCount.cnt  -a ./ref/TAIR10.gtf {input.bam}"
+		"featureCounts -p -Q 10 -M --fraction -s 0 -T 16 -o output/featureCount.cnt  -a ./ref/TAIR10.gtf {input.bam}; python src/fix_featCnt_header.py output/featureCount.cnt"
 
  ### EXAMPLE
  #Cont_1Aligned.sortedByCoord.out.bam Cont_2Aligned.sortedByCoord.out.bam Cont_3Aligned.sortedByCoord.out.bam Hours2_1Aligned.sortedByCoord.out.bam Hours2_2Aligned.sortedByCoord.out.bam Hours2_3Aligned.sortedByCoord.out.bam Hours4_1Aligned.sortedByCoord.out.bam Hours4_2Aligned.sortedByCoord.out.bam Hours4_3Aligned.sortedByCoord.out.bam Hours6_1Aligned.sortedByCoord.out.bam Hours6_2Aligned.sortedByCoord.out.bam Hours6_3Aligned.sortedByCoord.out.bam Hours8_1Aligned.sortedByCoord.out.bam Hours8_3Aligned.sortedByCoord.out.bam
@@ -138,18 +139,18 @@ rule readscount:
 ###############
 rule rundeg:
 	input:
-		ftcount = "output/featureCount.cnt"
+		ftcount = "output/featureCount.cnt.fixed"
 	output:
-		rd_out = expand("output/{rundeg_input}", rundeg_input = config["rundeg-output"])
+		rd_out = directory(expand("output/{rundeg_input}", rundeg_input = config["rundeg-output"]))
 	shell:
-		"run_DE_analysis.pl -m output/featureCount.cnt --method DESeq2 --samples_file ./samplefile --output {output.rd_out} --contrasts ./contrasts"
+		"run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output {output.rd_out} --contrasts ./contrasts"
 ##############
 
 
 ###############
 rule TPM:
 	input:
-		ftcount = "output/featureCount.cnt"
+		ftcount = "output/featureCount.cnt.fixed"
 	output:
 		ft_tab = "output/featureCount.cnt_for_tpm.tpm.tab"
 	shell:
@@ -157,13 +158,17 @@ rule TPM:
 
 
 ##############
-'''
+
 ##############
 rule diffexpr:
 ## Need to go to output folder
 	input:
-		tmp_tab = expand("output/{sample}/featureCount.cnt_for_tpm.tpm.tab", sample = SAMPLE_LIST)
+		tmp_tab = "output/featureCount.cnt_for_tpm.tpm.tab"
 	output:
-analyze_diff_expr.pl --matrix ../featureCount.cnt_for_tpm.tpm.tab -P 1e-3 -C 1 --max_genes_clust 40000
+		analyze = "output/Final_analysis/diffExpr.P1e-3_C1.matrix"
+	params:
+		rundeg_file = expand("output/{rundeg_input}", rundeg_input = config["rundeg-output"])
+	shell:
+		"cd {params.rundeg_file}; analyze_diff_expr.pl --matrix ../featureCount.cnt_for_tpm.tpm.tab -P 1e-3 -C 1 --max_genes_clust 40000; mkdir -p ../Final_analysis/; mv diffExpr.P1e-3_C1* ../Final_analysis/; mv *.subset ../Final_analysis; mv *.samples ../Final_analysis; mv *.matrix ../Final_analysis; cd ../.."
 
-#############'''
+#############
