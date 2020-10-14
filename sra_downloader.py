@@ -1,12 +1,10 @@
 #!/usr/bin/python
 
-import sys, getopt
 import threading
 import pathlib
 from time import sleep
 from time import time
 from argparse import ArgumentParser
-import io
 import subprocess
 
 import pandas as pd
@@ -16,10 +14,6 @@ import statistics
 
 
 output_directory = 'data/'
-#base_url = 'https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-1/'
-#https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=dload&run_list=SRR8296149&format=fasta
-#http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=dload&run_list=SRRNNNNNN
-#https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-2/SRR8296149/SRR8296149.1
 
 
 finished_file_bytes = 0
@@ -30,17 +24,6 @@ concurrency = 1
 lock_sample_list = threading.Lock()
 lock_active_transfer_list = threading.Lock()
 
-
-kb = 1024
-# callback function for c.XFERINFOFUNCTION
-def status(download_t, download_d, upload_t, upload_d):
-    #STREAM.write
-    print('Downloading: {}/{} kiB ({}%)\r'.format(
-        str(int(download_d/kb)),
-        str(int(download_t/kb)),
-        str(int(download_d/download_t*100) if download_t > 0 else 0)
-    ))
-    #STREAM.flush()
 
 
 def download_monitor (target_throughput, sample_list, active_transfer_list):
@@ -76,7 +59,6 @@ def download_monitor (target_throughput, sample_list, active_transfer_list):
     return
 
 
-
 def file_downloader (sample_list, active_transfer_list):
     global finished_file_bytes
     print("Running thread...")
@@ -97,8 +79,6 @@ def file_downloader (sample_list, active_transfer_list):
         file_path = output_directory + filename
         active_transfer_list.append(file_path)
         lock_active_transfer_list.release()
-
-
 
 
         # initialize and start curl file download
@@ -124,9 +104,7 @@ def file_downloader (sample_list, active_transfer_list):
         finished_file_bytes += file_size
         lock_active_transfer_list.release()
 
-#https://www.ebi.ac.uk/ena/portal/api/filereport?result=read_run&fields=fastq_ftp&accession=
 def discover_ftp_paths (sample_list):
-
     command = "srapath " + " ".join(sample_list)
     result = subprocess.run(command, shell=True, stdout=subprocess.PIPE)
     paths = result.stdout.decode('utf-8').splitlines()
@@ -158,11 +136,6 @@ if __name__ == "__main__":
     sample_file = pd.read_csv(args.sample_list, sep="\s+", dtype=str).set_index("sample", drop=False)
     sample_list = sample_file["sample"].values.tolist()
 
-    #sample_list_ftp_url = discover_ftp_paths (sample_list)
-
-
-
-    #sys.exit(-1)
     active_transfer_list = []
 
     pathlib.Path(output_directory).mkdir(parents=True, exist_ok=True)
