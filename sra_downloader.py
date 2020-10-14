@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-import sys, getopt
 import threading
 import pathlib
 from time import sleep
 from time import time
 from argparse import ArgumentParser
+import subprocess
 
 import pandas as pd
 import logging
@@ -14,10 +14,6 @@ import statistics
 
 
 output_directory = 'data/'
-base_url = 'https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-1/'
-#https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=dload&run_list=SRR8296149&format=fasta
-#http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=dload&run_list=SRRNNNNNN
-#https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos1/sra-pub-run-2/SRR8296149/SRR8296149.1
 
 
 finished_file_bytes = 0
@@ -28,17 +24,6 @@ concurrency = 1
 lock_sample_list = threading.Lock()
 lock_active_transfer_list = threading.Lock()
 
-
-kb = 1024
-# callback function for c.XFERINFOFUNCTION
-def status(download_t, download_d, upload_t, upload_d):
-    #STREAM.write
-    print('Downloading: {}/{} kiB ({}%)\r'.format(
-        str(int(download_d/kb)),
-        str(int(download_t/kb)),
-        str(int(download_d/download_t*100) if download_t > 0 else 0)
-    ))
-    #STREAM.flush()
 
 
 def download_monitor (target_throughput, sample_list, active_transfer_list):
@@ -52,10 +37,13 @@ def download_monitor (target_throughput, sample_list, active_transfer_list):
         if len(sample_list) == 0 and len(active_transfer_list) == 0:
            return
         for f in active_transfer_list:
-            size += pathlib.Path(f).stat().st_size
+            try:
+                size += pathlib.Path(f).stat().st_size
+            except:
+                continue
         throughput = ((size-last_size)*8)/(1000*1000.0)
         if throughput == 0:
-            sys.exit()
+            continue
         throughput_list.append(throughput)
         print ("Throughput {} Mbps, target {} Mbps, Active files: {}, Remaining files {}".format(throughput, target_throughput, len(active_transfer_list), len(sample_list)))
         last_size = size
@@ -69,7 +57,6 @@ def download_monitor (target_throughput, sample_list, active_transfer_list):
             thread_list.append(thread)
             last_concurrency_update_t = time()
     return
-
 
 
 def file_downloader (sample_list, active_transfer_list):
@@ -93,19 +80,21 @@ def file_downloader (sample_list, active_transfer_list):
         active_transfer_list.append(file_path)
         lock_active_transfer_list.release()
 
+
         # initialize and start curl file download
-        url = base_url + filename + '/' + filename +'.1'
+        sample_ftp_url = discover_ftp_paths([filename])[0]
+        #print("Starting to download " + filename, sample_ftp_url)
         fp = open(file_path, "wb")
-        curl.setopt(pycurl.URL, url)
+        curl.setopt(pycurl.URL, sample_ftp_url)
         curl.setopt(pycurl.WRITEDATA, fp)
         #curl.setopt(curl.NOPROGRESS, False)
         #curl.setopt(curl.XFERINFOFUNCTION, status)
         try:
             curl.perform()
         except pycurl.error as exc:
-            raise ValueError("Unable to reach %s (%s)" % (url, exc))
+            raise ValueError("Unable to reach %s (%s)" % (sample_ftp_url, exc))
         file_size = pathlib.Path(file_path).stat().st_size
-        print("Finished {} size: {}".format(url, file_size))
+        print("Finished {} size: {} MB".format(filename, (file_size/(1024*1024))))
         curl.close()
         fp.close()
 
@@ -115,32 +104,15 @@ def file_downloader (sample_list, active_transfer_list):
         finished_file_bytes += file_size
         lock_active_transfer_list.release()
 
+def discover_ftp_paths (sample_list):
+    command = "srapath " + " ".join(sample_list)
+    result = subprocess.run(command, shell=True, stdout=subprocess.PIPE)
+    paths = result.stdout.decode('utf-8').splitlines()
+    #print ("command", command, " paths:", paths, "hah")
+    return paths
+
 
 fileList = []
-def main(argv):
-    global sample_list, output_directory, concurrency, target_throughut
-    input_file = 'samples.tsv'
-    try:
-        opts, args = getopt.getopt(argv,"hi:o:c:t:",["ifile=","odir=", "concurrency=", "target="])
-    except getopt.GetoptError:
-        print ('test.py -i <inputfile> -o <output-directory>')
-        sys.exit(2)
-    for opt, arg in opts:
-        if opt == '-h':
-            print ('test.py -i <inputfile> -o <outputfile>')
-            sys.exit()
-        elif opt in ("-i", "--ifile"):
-            input_file = arg
-        elif opt in ("-o", "--odir"):
-            output_directory = arg
-        elif opt in ("-c", "--concurrency"):
-            concurrency = int(arg)
-        elif opt in ("-t", "--target"):
-            target_throughut = float(arg)
-
-
-
-    print ("There are " + str(len(sample_list)) +  " files to download")
 
 if __name__ == "__main__":
 
@@ -161,7 +133,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    sample_file = pd.read_csv('samples.tsv', sep="\s+", dtype=str).set_index("sample", drop=False)
+    sample_file = pd.read_csv(args.sample_list, sep="\s+", dtype=str).set_index("sample", drop=False)
     sample_list = sample_file["sample"].values.tolist()
 
     active_transfer_list = []
@@ -170,7 +142,7 @@ if __name__ == "__main__":
     t = threading.Thread(target=download_monitor, \
                      args=(args.target_throughput, sample_list, active_transfer_list,), daemon=True)
     t.start()
-    for i in range (concurrency):
+    for i in range (args.concurrency):
         thread = threading.Thread(target=file_downloader, \
                                   args=(sample_list, active_transfer_list,), daemon=True)
         logging.info("Main    : starting thread " + str(i))
