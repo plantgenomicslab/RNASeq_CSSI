@@ -62,16 +62,14 @@ def download_monitor (target_throughput, sample_list, active_transfer_list):
 def file_downloader (sample_list, active_transfer_list):
     global finished_file_bytes
     print("Running thread...")
+    curl = pycurl.Curl()
     while True:
         lock_sample_list.acquire()
         if len(sample_list) == 0:
             print("Exiting thread...")
             return
-
-        curl = pycurl.Curl()
         # Fetch a file from file list and add is to currently transferred file list
         # Synchronized operation due to using concurrency
-
         filename = sample_list.pop()
         lock_sample_list.release()
 
@@ -89,20 +87,29 @@ def file_downloader (sample_list, active_transfer_list):
         curl.setopt(pycurl.WRITEDATA, fp)
         #curl.setopt(curl.NOPROGRESS, False)
         #curl.setopt(curl.XFERINFOFUNCTION, status)
-        try:
-            curl.perform()
-        except pycurl.error as exc:
-            raise ValueError("Unable to reach %s (%s)" % (sample_ftp_url, exc))
-        file_size = pathlib.Path(file_path).stat().st_size
-        print("Finished {} size: {} MB".format(filename, (file_size/(1024*1024))))
-        curl.close()
-        fp.close()
-
-        # Remove file from currently transferred file list
-        lock_active_transfer_list.acquire()
-        active_transfer_list.remove(file_path)
-        finished_file_bytes += file_size
-        lock_active_transfer_list.release()
+        retry = 0
+        while retry < 3:
+            try:
+                curl.perform()
+                file_size = pathlib.Path(file_path).stat().st_size
+                finished_file_bytes += file_size
+                print("Finished {} size: {} MB".format(filename, (file_size/(1024*1024))))
+            except pycurl.error as exc:
+                print("Unable to download file %s (%s)" % (filename, exc))
+                retry +=1
+            finally:
+                # Remove file from currently transferred file list
+                fp.close()
+                lock_active_transfer_list.acquire()
+                active_transfer_list.remove(file_path)
+                lock_active_transfer_list.release()
+                break
+        if retry == 3:
+            print("Download attempt for file %s (%s) failed () times" % (filename, exc, retry))
+            lock_sample_list.acquire()
+            sample_list.append(filename)
+            lock_sample_list.release()
+    curl.close()
 
 def discover_ftp_paths (sample_list):
     command = "srapath " + " ".join(sample_list)
@@ -138,6 +145,7 @@ if __name__ == "__main__":
 
     active_transfer_list = []
 
+    output_directory = args.output_directory
     pathlib.Path(output_directory).mkdir(parents=True, exist_ok=True)
     t = threading.Thread(target=download_monitor, \
                      args=(args.target_throughput, sample_list, active_transfer_list,), daemon=True)
