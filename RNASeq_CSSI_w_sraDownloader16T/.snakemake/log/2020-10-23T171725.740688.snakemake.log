@@ -1,0 +1,15 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	113	fastqdump
+	113	sraDownload
+	227
+
+[Fri Oct 23 17:17:54 2020]
+Job 195: ~-~ Downloading sra files... -~-
+
+RuleException in line 86 of /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/Snakefile:
+NameError: The name 'sample' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}

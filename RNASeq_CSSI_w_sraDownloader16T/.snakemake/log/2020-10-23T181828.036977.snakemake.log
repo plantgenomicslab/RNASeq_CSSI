@@ -1,0 +1,311 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	112	fastqdump
+	113
+
+[Fri Oct 23 18:18:29 2020]
+Job 27: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR314814/SRA/SRR314814.sra --threads 16 -O output/SRR314814/RAW/ --split-files --gzip
+Submitted job 27 with external jobid '2547739'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 55: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR493036/SRA/SRR493036.sra --threads 16 -O output/SRR493036/RAW/ --split-files --gzip
+Submitted job 55 with external jobid '2547740'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 62: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR504180/SRA/SRR504180.sra --threads 16 -O output/SRR504180/RAW/ --split-files --gzip
+Submitted job 62 with external jobid '2547741'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 49: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446484/SRA/SRR446484.sra --threads 16 -O output/SRR446484/RAW/ --split-files --gzip
+Submitted job 49 with external jobid '2547742'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 26: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR314813/SRA/SRR314813.sra --threads 16 -O output/SRR314813/RAW/ --split-files --gzip
+Submitted job 26 with external jobid '2547743'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 110: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR949956/SRA/SRR949956.sra --threads 16 -O output/SRR949956/RAW/ --split-files --gzip
+Submitted job 110 with external jobid '2547744'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 82: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653566/SRA/SRR653566.sra --threads 16 -O output/SRR653566/RAW/ --split-files --gzip
+Submitted job 82 with external jobid '2547745'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 63: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR504181/SRA/SRR504181.sra --threads 16 -O output/SRR504181/RAW/ --split-files --gzip
+Submitted job 63 with external jobid '2547746'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 104: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847504/SRA/SRR847504.sra --threads 16 -O output/SRR847504/RAW/ --split-files --gzip
+Submitted job 104 with external jobid '2547747'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 67: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR527165/SRA/SRR527165.sra --threads 16 -O output/SRR527165/RAW/ --split-files --gzip
+Submitted job 67 with external jobid '2547748'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 38: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401417/SRA/SRR401417.sra --threads 16 -O output/SRR401417/RAW/ --split-files --gzip
+Submitted job 38 with external jobid '2547749'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 97: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR797230/SRA/SRR797230.sra --threads 16 -O output/SRR797230/RAW/ --split-files --gzip
+Submitted job 97 with external jobid '2547750'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 105: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847505/SRA/SRR847505.sra --threads 16 -O output/SRR847505/RAW/ --split-files --gzip
+Submitted job 105 with external jobid '2547751'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 81: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653565/SRA/SRR653565.sra --threads 16 -O output/SRR653565/RAW/ --split-files --gzip
+Submitted job 81 with external jobid '2547752'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 43: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446027/SRA/SRR446027.sra --threads 16 -O output/SRR446027/RAW/ --split-files --gzip
+Submitted job 43 with external jobid '2547753'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 106: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847506/SRA/SRR847506.sra --threads 16 -O output/SRR847506/RAW/ --split-files --gzip
+Submitted job 106 with external jobid '2547754'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 36: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401415/SRA/SRR401415.sra --threads 16 -O output/SRR401415/RAW/ --split-files --gzip
+Submitted job 36 with external jobid '2547755'.
+
+[Fri Oct 23 18:18:29 2020]
+Job 80: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653564/SRA/SRR653564.sra --threads 16 -O output/SRR653564/RAW/ --split-files --gzip
+Submitted job 80 with external jobid '2547756'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 33: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR394082/SRA/SRR394082.sra --threads 16 -O output/SRR394082/RAW/ --split-files --gzip
+Submitted job 33 with external jobid '2547757'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 20: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1260032/SRA/SRR1260032.sra --threads 16 -O output/SRR1260032/RAW/ --split-files --gzip
+Submitted job 20 with external jobid '2547758'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 77: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653561/SRA/SRR653561.sra --threads 16 -O output/SRR653561/RAW/ --split-files --gzip
+Submitted job 77 with external jobid '2547759'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/ERR274309/SRA/ERR274309.sra --threads 16 -O output/ERR274309/RAW/ --split-files --gzip
+Submitted job 1 with external jobid '2547760'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 89: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653573/SRA/SRR653573.sra --threads 16 -O output/SRR653573/RAW/ --split-files --gzip
+Submitted job 89 with external jobid '2547761'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019436/SRA/SRR1019436.sra --threads 16 -O output/SRR1019436/RAW/ --split-files --gzip
+Submitted job 8 with external jobid '2547762'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 39: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401418/SRA/SRR401418.sra --threads 16 -O output/SRR401418/RAW/ --split-files --gzip
+Submitted job 39 with external jobid '2547763'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 13: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105822/SRA/SRR1105822.sra --threads 16 -O output/SRR1105822/RAW/ --split-files --gzip
+Submitted job 13 with external jobid '2547764'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 44: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446028/SRA/SRR446028.sra --threads 16 -O output/SRR446028/RAW/ --split-files --gzip
+Submitted job 44 with external jobid '2547765'.
+
+[Fri Oct 23 18:18:30 2020]
+Job 2: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/ERR274310/SRA/ERR274310.sra --threads 16 -O output/ERR274310/RAW/ --split-files --gzip
+Submitted job 2 with external jobid '2547766'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 11: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1046910/SRA/SRR1046910.sra --threads 16 -O output/SRR1046910/RAW/ --split-files --gzip
+Submitted job 11 with external jobid '2547767'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 103: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847503/SRA/SRR847503.sra --threads 16 -O output/SRR847503/RAW/ --split-files --gzip
+Submitted job 103 with external jobid '2547768'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 83: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653567/SRA/SRR653567.sra --threads 16 -O output/SRR653567/RAW/ --split-files --gzip
+Submitted job 83 with external jobid '2547769'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 29: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR345561/SRA/SRR345561.sra --threads 16 -O output/SRR345561/RAW/ --split-files --gzip
+Submitted job 29 with external jobid '2547770'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 35: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401414/SRA/SRR401414.sra --threads 16 -O output/SRR401414/RAW/ --split-files --gzip
+Submitted job 35 with external jobid '2547771'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 70: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR584115/SRA/SRR584115.sra --threads 16 -O output/SRR584115/RAW/ --split-files --gzip
+Submitted job 70 with external jobid '2547772'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 41: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401420/SRA/SRR401420.sra --threads 16 -O output/SRR401420/RAW/ --split-files --gzip
+Submitted job 41 with external jobid '2547773'.
+
+[Fri Oct 23 18:18:32 2020]
+Job 90: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653574/SRA/SRR653574.sra --threads 16 -O output/SRR653574/RAW/ --split-files --gzip
+Submitted job 90 with external jobid '2547774'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 91: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653575/SRA/SRR653575.sra --threads 16 -O output/SRR653575/RAW/ --split-files --gzip
+Submitted job 91 with external jobid '2547775'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 107: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR924656/SRA/SRR924656.sra --threads 16 -O output/SRR924656/RAW/ --split-files --gzip
+Submitted job 107 with external jobid '2547776'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 45: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446033/SRA/SRR446033.sra --threads 16 -O output/SRR446033/RAW/ --split-files --gzip
+Submitted job 45 with external jobid '2547777'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 18: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1207194/SRA/SRR1207194.sra --threads 16 -O output/SRR1207194/RAW/ --split-files --gzip
+Submitted job 18 with external jobid '2547778'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 9: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019437/SRA/SRR1019437.sra --threads 16 -O output/SRR1019437/RAW/ --split-files --gzip
+Submitted job 9 with external jobid '2547779'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 102: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847502/SRA/SRR847502.sra --threads 16 -O output/SRR847502/RAW/ --split-files --gzip
+Submitted job 102 with external jobid '2547780'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 40: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401419/SRA/SRR401419.sra --threads 16 -O output/SRR401419/RAW/ --split-files --gzip
+Submitted job 40 with external jobid '2547781'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 72: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR584129/SRA/SRR584129.sra --threads 16 -O output/SRR584129/RAW/ --split-files --gzip
+Submitted job 72 with external jobid '2547782'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 23: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1524935/SRA/SRR1524935.sra --threads 16 -O output/SRR1524935/RAW/ --split-files --gzip
+Submitted job 23 with external jobid '2547783'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 66: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR527164/SRA/SRR527164.sra --threads 16 -O output/SRR527164/RAW/ --split-files --gzip
+Submitted job 66 with external jobid '2547784'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 16: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1159827/SRA/SRR1159827.sra --threads 16 -O output/SRR1159827/RAW/ --split-files --gzip
+Submitted job 16 with external jobid '2547785'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 19: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1207195/SRA/SRR1207195.sra --threads 16 -O output/SRR1207195/RAW/ --split-files --gzip
+Submitted job 19 with external jobid '2547786'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 25: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1524940/SRA/SRR1524940.sra --threads 16 -O output/SRR1524940/RAW/ --split-files --gzip
+Submitted job 25 with external jobid '2547787'.
+
+[Fri Oct 23 18:18:33 2020]
+Job 28: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR314815/SRA/SRR314815.sra --threads 16 -O output/SRR314815/RAW/ --split-files --gzip
+Submitted job 28 with external jobid '2547788'.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T181828.036977.snakemake.log

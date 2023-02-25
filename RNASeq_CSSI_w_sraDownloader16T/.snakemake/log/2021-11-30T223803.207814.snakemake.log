@@ -1,0 +1,158 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+TPM               1              1              1
+all               1              1              1
+diffexpr          1              1              1
+mapping          12             16             16
+readscount        1             16             16
+rundeg            1              1              1
+total            17              1             16
+
+Select jobs to execute...
+
+[Tue Nov 30 22:38:05 2021]
+Job 39: -~- Mapping... -~-
+
+Submitted job 39 with external jobid '2946689'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 41: -~- Mapping... -~-
+
+Submitted job 41 with external jobid '2946690'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 42: -~- Mapping... -~-
+
+Submitted job 42 with external jobid '2946691'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 44: -~- Mapping... -~-
+
+Submitted job 44 with external jobid '2946692'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 46: -~- Mapping... -~-
+
+Submitted job 46 with external jobid '2946693'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 48: -~- Mapping... -~-
+
+Submitted job 48 with external jobid '2946694'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 38: -~- Mapping... -~-
+
+Submitted job 38 with external jobid '2946695'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 40: -~- Mapping... -~-
+
+Submitted job 40 with external jobid '2946696'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 43: -~- Mapping... -~-
+
+Submitted job 43 with external jobid '2946697'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 45: -~- Mapping... -~-
+
+Submitted job 45 with external jobid '2946698'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 47: -~- Mapping... -~-
+
+Submitted job 47 with external jobid '2946699'.
+
+[Tue Nov 30 22:38:05 2021]
+Job 49: -~- Mapping... -~-
+
+Submitted job 49 with external jobid '2946700'.
+[Tue Nov 30 22:42:05 2021]
+Finished job 48.
+1 of 17 steps (6%) done
+[Tue Nov 30 22:43:10 2021]
+Finished job 44.
+2 of 17 steps (12%) done
+[Tue Nov 30 22:43:12 2021]
+Finished job 46.
+3 of 17 steps (18%) done
+[Tue Nov 30 22:43:21 2021]
+Finished job 45.
+4 of 17 steps (24%) done
+[Tue Nov 30 22:43:23 2021]
+Finished job 47.
+5 of 17 steps (29%) done
+[Tue Nov 30 22:44:02 2021]
+Finished job 39.
+6 of 17 steps (35%) done
+[Tue Nov 30 22:44:09 2021]
+Finished job 38.
+7 of 17 steps (41%) done
+[Tue Nov 30 22:44:11 2021]
+Finished job 40.
+8 of 17 steps (47%) done
+[Tue Nov 30 22:44:28 2021]
+Finished job 41.
+9 of 17 steps (53%) done
+[Tue Nov 30 22:45:07 2021]
+Finished job 49.
+10 of 17 steps (59%) done
+[Tue Nov 30 22:45:19 2021]
+Finished job 42.
+11 of 17 steps (65%) done
+[Tue Nov 30 22:45:58 2021]
+Finished job 43.
+12 of 17 steps (71%) done
+Select jobs to execute...
+
+[Tue Nov 30 22:45:58 2021]
+Job 51: -~- Generating feature counts... -~-
+
+featureCounts -p -Q 10 -M --fraction -s 0 -T 16 -o output/featureCount.cnt  -a ./ref/TAIR10.gtf output/SRR4015222/SRR4015222Aligned.sortedByCoord.out.bam output/SRR4015224/SRR4015224Aligned.sortedByCoord.out.bam output/SRR4015214/SRR4015214Aligned.sortedByCoord.out.bam output/SRR3657709/SRR3657709Aligned.sortedByCoord.out.bam output/SRR4015225/SRR4015225Aligned.sortedByCoord.out.bam output/SRR4015226/SRR4015226Aligned.sortedByCoord.out.bam output/SRR4015216/SRR4015216Aligned.sortedByCoord.out.bam output/SRR4015217/SRR4015217Aligned.sortedByCoord.out.bam output/SRR4015228/SRR4015228Aligned.sortedByCoord.out.bam output/SRR4015229/SRR4015229Aligned.sortedByCoord.out.bam output/SRR4015231/SRR4015231Aligned.sortedByCoord.out.bam output/SRR4015218/SRR4015218Aligned.sortedByCoord.out.bam; python src/fix_featCnt_header.py output/featureCount.cnt
+Submitted job 51 with external jobid '2946705'.
+[Tue Nov 30 22:48:12 2021]
+Finished job 51.
+13 of 17 steps (76%) done
+Select jobs to execute...
+
+[Tue Nov 30 22:48:12 2021]
+Job 50: -~- Generating analysis... -~-
+
+run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+Submitted job 50 with external jobid '2946707'.
+
+[Tue Nov 30 22:48:12 2021]
+Job 52: -~- Generating TPM file... -~-
+
+cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+Submitted job 52 with external jobid '2946708'.
+[Tue Nov 30 22:48:24 2021]
+Error in rule rundeg:
+    jobid: 50
+    output: output/rundeg_featureCount
+    shell:
+        run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946707
+
+Error executing rule rundeg on cluster (jobid: 50, external: 2946707, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.y37yvs56/snakejob.rundeg.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 22:48:26 2021]
+Error in rule TPM:
+    jobid: 52
+    output: output/featureCount.cnt_for_tpm.tpm.tab
+    shell:
+        cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946708
+
+Error executing rule TPM on cluster (jobid: 52, external: 2946708, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.y37yvs56/snakejob.TPM.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2021-11-30T223803.207814.snakemake.log

@@ -1,0 +1,104 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	12	fastqdump
+	12	trimming
+	25
+
+[Fri Oct 23 19:39:07 2020]
+Job 3: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446040/SRA/SRR446040.sra --threads 16 -O output/SRR446040/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 3 with external jobid '2547897'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 4: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446039/SRA/SRR446039.sra --threads 16 -O output/SRR446039/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 4 with external jobid '2547898'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 7: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446028/SRA/SRR446028.sra --threads 16 -O output/SRR446028/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 7 with external jobid '2547899'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR934391/SRA/SRR934391.sra --threads 16 -O output/SRR934391/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 1 with external jobid '2547900'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446027/SRA/SRR446027.sra --threads 16 -O output/SRR446027/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 8 with external jobid '2547901'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 2: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR764885/SRA/SRR764885.sra --threads 16 -O output/SRR764885/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 2 with external jobid '2547902'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 9: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1261509/SRA/SRR1261509.sra --threads 16 -O output/SRR1261509/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 9 with external jobid '2547903'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 6: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446033/SRA/SRR446033.sra --threads 16 -O output/SRR446033/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 6 with external jobid '2547904'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 10: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105823/SRA/SRR1105823.sra --threads 16 -O output/SRR1105823/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 10 with external jobid '2547905'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 11: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105822/SRA/SRR1105822.sra --threads 16 -O output/SRR1105822/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 11 with external jobid '2547906'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 5: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446034/SRA/SRR446034.sra --threads 16 -O output/SRR446034/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 5 with external jobid '2547907'.
+
+[Fri Oct 23 19:39:07 2020]
+Job 12: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019221/SRA/SRR1019221.sra --threads 16 -O output/SRR1019221/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 12 with external jobid '2547908'.
+[Fri Oct 23 19:39:19 2020]
+Error in rule fastqdump:
+    jobid: 3
+    output: output/SRR446040/RAW/SRR446040_pass_1.fastq.gz, output/SRR446040/RAW/SRR446040_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR446040/SRA/SRR446040.sra --threads 16 -O output/SRR446040/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547897
+
+Error executing rule fastqdump on cluster (jobid: 3, external: 2547897, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.li5os7bv/snakejob.fastqdump.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:39:21 2020]
+Error in rule fastqdump:
+    jobid: 4
+    output: output/SRR446039/RAW/SRR446039_pass_1.fastq.gz, output/SRR446039/RAW/SRR446039_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR446039/SRA/SRR446039.sra --threads 16 -O output/SRR446039/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547898
+
+Error executing rule fastqdump on cluster (jobid: 4, external: 2547898, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.li5os7bv/snakejob.fastqdump.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T193905.762474.snakemake.log

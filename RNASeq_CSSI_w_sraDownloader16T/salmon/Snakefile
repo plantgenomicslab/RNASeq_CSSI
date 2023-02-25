@@ -1,0 +1,175 @@
+import sys
+import os
+import pandas as pd
+SAMPLE_FILE = pd.read_table('data/passes.txt', sep="\s+", dtype=str).set_index("sample", drop=False)  # enforce str in index
+SAMPLE_LIST = SAMPLE_FILE["sample"].values.tolist()
+THREADS =  48
+configfile: "./config.json"
+
+##Create sample output folders
+os.makedirs("output/cluster/logs/", exist_ok=True)
+for path in SAMPLE_LIST:
+	os.makedirs("output/" + path + "/stat/", exist_ok=True)
+	os.makedirs("output/" + path + "/raw/", exist_ok=True)
+	os.makedirs("output/" + path + "/SRA/", exist_ok=True)
+	os.makedirs("output/" + path + "/bam/", exist_ok=True)
+	os.makedirs("output/" + path + "/trim/", exist_ok=True)
+	os.makedirs("output/" + path + "/count/", exist_ok=True)
+
+
+##Download reference files in ref/ if they don't exist.
+#	REF_FILES: reference file names to check for existence
+#	output: reference files
+REF_FILES = ['TAIR10_chr_all.fas',  'TAIR10_GFF3_genes.gff']
+missing_files = 0
+os.makedirs('ref', exist_ok=True)
+for ref in REF_FILES:
+	if not os.path.exists('ref/' + ref):
+		missing_files = 1
+if missing_files:
+	os.system('curl -L https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff > ref/TAIR10_GFF3_genes.gff; curl -L https://www.arabidopsis.org/download_files/Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas > ref/TAIR10_chr_all.fas')
+
+
+##Fix fasta file header names
+#	FASTA_LINES: fasta file line reads
+#	FASTA_OUTPUT: fixed fasta file output
+FASTA_LINES = open('ref/TAIR10_chr_all.fas', 'r').readlines()
+FASTA_OUTPUT = open('ref/TAIR10_chr_all.fas.fixed', 'w')
+for row in FASTA_LINES:
+	if row[0] == '>':
+		FASTA_OUTPUT.write('>Chr' + row[1].upper() + '\n')
+	else:
+		FASTA_OUTPUT.write(row)
+FASTA_OUTPUT.close()
+
+#############################################################
+#Check if all inputted sample SRA files are present
+#	SAMPLE_LIST : list of samples to check
+#	@post : all sample SRA files will be present
+#############################################################
+#missing_sra = 0
+#for sample in SAMPLE_LIST:
+#	if not os.path.exists("output/" + sample + "/raw/" + sample):
+#		missing_sra = 1
+#if missing_sra:
+#	os.system('python src/sra_downloader.py -i data/samples.tsv -o output/SRA/')
+#	for sample in SAMPLE_LIST:
+#		os.system("mv output/SRA/" + sample + " output/" + sample + "/SRA/")
+#os.system("rm -rf output/SRA/")
+
+#############################################################
+#Generate reference files for STAR mapping
+#############################################################
+#os.system("gffread ref/TAIR10_GFF3_genes.gff -T -o ref/TAIR10.gtf")
+#os.system("STAR --runThreadN 6 --genomeDir ./ref --genomeFastaFiles ref/TAIR10_chr_all.fas.fixed --sjdbGTFfile ref/TAIR10.gtf --runMode genomeGenerate --sjdbOverhang 99 --genomeSAindexNbases 10")
+
+
+###################
+# rule all:
+# 	input:
+# 		#"output/Final_analysis/diffExpr.P1e-3_C1.matrix",
+# 		#"output/featureCount.cnt_for_tpm.tpm.tab",
+# 		#expand("output/{rundeg_input}", rundeg_input = config["rundeg-output"]),
+# 		#"output/featureCount.cnt.fixed",
+# 		#expand("output/{sample}/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLE_LIST),
+# 		#expand("output/{sample}/{rundeg_input}", sample = SAMPLE_LIST, rundeg_input = config["rundeg-output"])
+# 		#expand("output/{sample}/trim/{sample}_pass_2_val_2.fq.gz", sample = SAMPLE_LIST),
+# 		#expand("output/{sample}/trim/{sample}_pass_1_val_1.fq.gz", sample = SAMPLE_LIST)
+# 		expand("output/{sample}/raw/{sample}_pass_1.fastq.gz", sample = SAMPLE_LIST),
+# 		expand("output/{sample}/trim/{sample}_pass_1_val_1.fq.gz", sample = SAMPLE_LIST),
+# 		expand("output/{sample}/trim/{sample}_pass_2_val_2.fq.gz", sample = SAMPLE_LIST),
+# 		expand("output/{sample}/{sample}Aligned.sortedByCoord.out.bam", sample = SAMPLE_LIST),
+# 		expand("output/{rundeg_input}", rundeg_input = config["rundeg-output"]),
+# 		"output/featureCount.cnt_for_tpm.tpm.tab",
+# 		"output/Final_analysis/diffExpr.P1e-3_C1.matrix"
+
+#sraid = [path for path in SAMPLE_LIST]
+
+rule start:
+	input:
+		expand("output/{sample}/bam/{sample}_star.bam", sample = SAMPLE_LIST),
+		expand("output/{sample}/count/{sample}_star_featureCount.cnt", sample  = SAMPLE_LIST)
+#################
+
+rule sraDownload:
+	message: "~-~ Downloading sra files... -~-"
+	benchmark: "output/benchmarks/threads" + str(THREADS) + "/bm_sraDownloader={sample}.txt"
+	output:
+		"output/{sample}/SRA/{sample}.sra"
+	run:
+		for sraid in SAMPLE_LIST:
+			shell("prefetch {wildcards.sample} --output-file output/{wildcards.sample}/SRA/{wildcards.sample}.sra")
+#		shell:
+		#		"prefetch {wildcards.sample} --output-file output/{wildcards.sample}/SRA/{wildcards.sample}.sra"
+	#	"prefetch {input} --output-file output/{wildcards.sample}/SRA/{wildcards.sample}.sra"
+		# "touch output/{wildcards.sample}/SRA/{wildcards.sample}.sra"
+		#"fastq-dump {wildcards.sample} --outdir output/SRA/"
+
+rule fastqdump:
+	message: "-~- Converting sra to fastq files... -~-"
+	# benchmark: "output/benchmarks/threads" + str(THREADS) + "/bm_fastqdump_sample={sample}.txt"
+	threads: THREADS
+	input:
+		sra="output/{sample}/SRA/{sample}.sra"
+	output:
+		fwd="output/{sample}/raw/{sample}_1.fastq.gz",
+		rev="output/{sample}/raw/{sample}_2.fastq.gz"
+	shell:
+		"parallel-fastq-dump --sra-id output/{wildcards.sample}/SRA/{wildcards.sample}.sra --threads {threads} -O output/{wildcards.sample}/raw/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase"
+
+
+################
+rule trimming:
+	message: "-~- Trimming fastq files... -~-"
+	benchmark: "output/benchmarks/threads" + str(THREADS) + "/bm_trimming_sample={sample}.txt"
+	input:
+		fwd="output/{sample}/raw/{sample}_1.fastq.gz",
+		rev="output/{sample}/raw/{sample}_2.fastq.gz"
+	output:
+		fwd="output/{sample}/trim/{sample}_1_val_1.fq.gz",
+		rev="output/{sample}/trim/{sample}_2_val_2.fq.gz"
+	threads: THREADS
+	run:
+		shell('mkdir -p output/{wildcards.sample}/trim')
+		shell('trim_galore \
+				--paired \
+				--three_prime_clip_R1 10 \
+				--three_prime_clip_R2 10 \
+				--cores {threads} \
+				--max_n 50 \
+				--fastqc \
+				--gzip \
+				-o output/{wildcards.sample}/trim/ \
+				{input.fwd} \
+				{input.rev}')
+
+
+################
+rule mapping:
+	message: "-~- Mapping... -~-"
+	benchmark: "output/benchmarks/threads" + str(THREADS) + "/bm_mapping_sample={sample}.txt"
+	threads: THREADS
+	input:
+		fwd="output/{sample}/trim/{sample}_1_val_1.fq.gz",
+		rev="output/{sample}/trim/{sample}_2_val_2.fq.gz"
+	output:
+		file = "output/{sample}/bam/{sample}_star.bam"
+	message: "STAR mapping"
+	run:
+		#shell('mkdir -p output/{wildcards.sample}/')
+		shell('STAR --runMode alignReads --runThreadN {threads} --readFilesCommand zcat --outFilterMultimapNmax 10 --alignIntronMin 30 --alignIntronMax 55000 --genomeDir ./ref  --readFilesIn {input.fwd},{input.rev}  --outSAMtype BAM SortedByCoordinate --outFileNamePrefix output/{wildcards.sample}/bam/{wildcards.sample}_star_ --outStd BAM_SortedByCoordinate > output/{wildcards.sample}/bam/{wildcards.sample}_star.bam')
+
+##################
+rule readscount:
+	message: "-~- Generating feature counts... -~-"
+	benchmark: "output/benchmarks/threads" + str(THREADS) + "/bm_readscount.txt={sample}.txt"
+	threads: THREADS
+	input:
+		bam = "output/{sample}/bam/{sample}_star.bam"
+	output:
+		ftcount = "output/{sample}/count/{sample}_star_featureCount.cnt"
+	shell:
+		"featureCounts -p -Q 10 -M --fraction -s 0 -T {threads} -o {output.ftcount} -a ./ref/TAIR10.gtf {input.bam}"
+
+
+#"featureCounts -p -Q 10 -M --fraction -s 0 -T {threads} -o output/{wildcards.sample}/count/{wildcards.sample}_star_featureCount.cnt  -a ./ref/TAIR10.gtf {input.bam}; python src/fix_featCnt_header.py output/featureCount.cnt"

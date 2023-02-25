@@ -1,0 +1,1139 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	112	rename
+	113
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR314813/SRA/SRR314813.sra
+    jobid: 26
+    wildcards: sample=SRR314813
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 26.
+1 of 113 steps (0.88%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR1046909/SRA/SRR1046909.sra
+    jobid: 10
+    wildcards: sample=SRR1046909
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 10.
+2 of 113 steps (2%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR1207195/SRA/SRR1207195.sra
+    jobid: 19
+    wildcards: sample=SRR1207195
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 19.
+3 of 113 steps (3%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR1524935/SRA/SRR1524935.sra
+    jobid: 23
+    wildcards: sample=SRR1524935
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 23.
+4 of 113 steps (4%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR764885/SRA/SRR764885.sra
+    jobid: 95
+    wildcards: sample=SRR764885
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 95.
+5 of 113 steps (4%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR345561/SRA/SRR345561.sra
+    jobid: 29
+    wildcards: sample=SRR345561
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 29.
+6 of 113 steps (5%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR446034/SRA/SRR446034.sra
+    jobid: 46
+    wildcards: sample=SRR446034
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 46.
+7 of 113 steps (6%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR314815/SRA/SRR314815.sra
+    jobid: 28
+    wildcards: sample=SRR314815
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 28.
+8 of 113 steps (7%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR493036/SRA/SRR493036.sra
+    jobid: 55
+    wildcards: sample=SRR493036
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 55.
+9 of 113 steps (8%) done
+
+[Fri Oct 23 18:16:40 2020]
+rule rename:
+    output: output/SRR1046910/SRA/SRR1046910.sra
+    jobid: 11
+    wildcards: sample=SRR1046910
+
+[Fri Oct 23 18:16:40 2020]
+Finished job 11.
+10 of 113 steps (9%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR1019437/SRA/SRR1019437.sra
+    jobid: 9
+    wildcards: sample=SRR1019437
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 9.
+11 of 113 steps (10%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/ERR274310/SRA/ERR274310.sra
+    jobid: 2
+    wildcards: sample=ERR274310
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 2.
+12 of 113 steps (11%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR584134/SRA/SRR584134.sra
+    jobid: 73
+    wildcards: sample=SRR584134
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 73.
+13 of 113 steps (12%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR314814/SRA/SRR314814.sra
+    jobid: 27
+    wildcards: sample=SRR314814
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 27.
+14 of 113 steps (12%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR653569/SRA/SRR653569.sra
+    jobid: 85
+    wildcards: sample=SRR653569
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 85.
+15 of 113 steps (13%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR446039/SRA/SRR446039.sra
+    jobid: 47
+    wildcards: sample=SRR446039
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 47.
+16 of 113 steps (14%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR446028/SRA/SRR446028.sra
+    jobid: 44
+    wildcards: sample=SRR446028
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 44.
+17 of 113 steps (15%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR1105822/SRA/SRR1105822.sra
+    jobid: 13
+    wildcards: sample=SRR1105822
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 13.
+18 of 113 steps (16%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR653555/SRA/SRR653555.sra
+    jobid: 74
+    wildcards: sample=SRR653555
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 74.
+19 of 113 steps (17%) done
+
+[Fri Oct 23 18:16:41 2020]
+rule rename:
+    output: output/SRR1159821/SRA/SRR1159821.sra
+    jobid: 15
+    wildcards: sample=SRR1159821
+
+[Fri Oct 23 18:16:41 2020]
+Finished job 15.
+20 of 113 steps (18%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR446487/SRA/SRR446487.sra
+    jobid: 52
+    wildcards: sample=SRR446487
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 52.
+21 of 113 steps (19%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR653573/SRA/SRR653573.sra
+    jobid: 89
+    wildcards: sample=SRR653573
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 89.
+22 of 113 steps (19%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR527164/SRA/SRR527164.sra
+    jobid: 66
+    wildcards: sample=SRR527164
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 66.
+23 of 113 steps (20%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR949988/SRA/SRR949988.sra
+    jobid: 112
+    wildcards: sample=SRR949988
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 112.
+24 of 113 steps (21%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR653572/SRA/SRR653572.sra
+    jobid: 88
+    wildcards: sample=SRR653572
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 88.
+25 of 113 steps (22%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR477076/SRA/SRR477076.sra
+    jobid: 54
+    wildcards: sample=SRR477076
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 54.
+26 of 113 steps (23%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR584115/SRA/SRR584115.sra
+    jobid: 70
+    wildcards: sample=SRR584115
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 70.
+27 of 113 steps (24%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR847506/SRA/SRR847506.sra
+    jobid: 106
+    wildcards: sample=SRR847506
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 106.
+28 of 113 steps (25%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR653574/SRA/SRR653574.sra
+    jobid: 90
+    wildcards: sample=SRR653574
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 90.
+29 of 113 steps (26%) done
+
+[Fri Oct 23 18:16:42 2020]
+rule rename:
+    output: output/SRR653563/SRA/SRR653563.sra
+    jobid: 79
+    wildcards: sample=SRR653563
+
+[Fri Oct 23 18:16:42 2020]
+Finished job 79.
+30 of 113 steps (27%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR401418/SRA/SRR401418.sra
+    jobid: 39
+    wildcards: sample=SRR401418
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 39.
+31 of 113 steps (27%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR1524940/SRA/SRR1524940.sra
+    jobid: 25
+    wildcards: sample=SRR1524940
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 25.
+32 of 113 steps (28%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR924656/SRA/SRR924656.sra
+    jobid: 107
+    wildcards: sample=SRR924656
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 107.
+33 of 113 steps (29%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR1019221/SRA/SRR1019221.sra
+    jobid: 7
+    wildcards: sample=SRR1019221
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 7.
+34 of 113 steps (30%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR1001910/SRA/SRR1001910.sra
+    jobid: 6
+    wildcards: sample=SRR1001910
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 6.
+35 of 113 steps (31%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR653566/SRA/SRR653566.sra
+    jobid: 82
+    wildcards: sample=SRR653566
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 82.
+36 of 113 steps (32%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR493098/SRA/SRR493098.sra
+    jobid: 57
+    wildcards: sample=SRR493098
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 57.
+37 of 113 steps (33%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR653567/SRA/SRR653567.sra
+    jobid: 83
+    wildcards: sample=SRR653567
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 83.
+38 of 113 steps (34%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR401417/SRA/SRR401417.sra
+    jobid: 38
+    wildcards: sample=SRR401417
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 38.
+39 of 113 steps (35%) done
+
+[Fri Oct 23 18:16:43 2020]
+rule rename:
+    output: output/SRR548277/SRA/SRR548277.sra
+    jobid: 69
+    wildcards: sample=SRR548277
+
+[Fri Oct 23 18:16:43 2020]
+Finished job 69.
+40 of 113 steps (35%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR847502/SRA/SRR847502.sra
+    jobid: 102
+    wildcards: sample=SRR847502
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 102.
+41 of 113 steps (36%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR446033/SRA/SRR446033.sra
+    jobid: 45
+    wildcards: sample=SRR446033
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 45.
+42 of 113 steps (37%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR1261509/SRA/SRR1261509.sra
+    jobid: 22
+    wildcards: sample=SRR1261509
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 22.
+43 of 113 steps (38%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR653577/SRA/SRR653577.sra
+    jobid: 93
+    wildcards: sample=SRR653577
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 93.
+44 of 113 steps (39%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR800754/SRA/SRR800754.sra
+    jobid: 99
+    wildcards: sample=SRR800754
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 99.
+45 of 113 steps (40%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR446485/SRA/SRR446485.sra
+    jobid: 50
+    wildcards: sample=SRR446485
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 50.
+46 of 113 steps (41%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR1019436/SRA/SRR1019436.sra
+    jobid: 8
+    wildcards: sample=SRR1019436
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 8.
+47 of 113 steps (42%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR515073/SRA/SRR515073.sra
+    jobid: 64
+    wildcards: sample=SRR515073
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 64.
+48 of 113 steps (42%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR394082/SRA/SRR394082.sra
+    jobid: 33
+    wildcards: sample=SRR394082
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 33.
+49 of 113 steps (43%) done
+
+[Fri Oct 23 18:16:44 2020]
+rule rename:
+    output: output/SRR401415/SRA/SRR401415.sra
+    jobid: 36
+    wildcards: sample=SRR401415
+
+[Fri Oct 23 18:16:44 2020]
+Finished job 36.
+50 of 113 steps (44%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR653568/SRA/SRR653568.sra
+    jobid: 84
+    wildcards: sample=SRR653568
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 84.
+51 of 113 steps (45%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR493238/SRA/SRR493238.sra
+    jobid: 60
+    wildcards: sample=SRR493238
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 60.
+52 of 113 steps (46%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR547531/SRA/SRR547531.sra
+    jobid: 68
+    wildcards: sample=SRR547531
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 68.
+53 of 113 steps (47%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR653575/SRA/SRR653575.sra
+    jobid: 91
+    wildcards: sample=SRR653575
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 91.
+54 of 113 steps (48%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR504179/SRA/SRR504179.sra
+    jobid: 61
+    wildcards: sample=SRR504179
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 61.
+55 of 113 steps (49%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR401420/SRA/SRR401420.sra
+    jobid: 41
+    wildcards: sample=SRR401420
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 41.
+56 of 113 steps (50%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR1207194/SRA/SRR1207194.sra
+    jobid: 18
+    wildcards: sample=SRR1207194
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 18.
+57 of 113 steps (50%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR584121/SRA/SRR584121.sra
+    jobid: 71
+    wildcards: sample=SRR584121
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 71.
+58 of 113 steps (51%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR934391/SRA/SRR934391.sra
+    jobid: 108
+    wildcards: sample=SRR934391
+
+[Fri Oct 23 18:16:45 2020]
+Finished job 108.
+59 of 113 steps (52%) done
+
+[Fri Oct 23 18:16:45 2020]
+rule rename:
+    output: output/SRR797230/SRA/SRR797230.sra
+    jobid: 97
+    wildcards: sample=SRR797230
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 97.
+60 of 113 steps (53%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR653562/SRA/SRR653562.sra
+    jobid: 78
+    wildcards: sample=SRR653562
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 78.
+61 of 113 steps (54%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR847501/SRA/SRR847501.sra
+    jobid: 101
+    wildcards: sample=SRR847501
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 101.
+62 of 113 steps (55%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR833246/SRA/SRR833246.sra
+    jobid: 100
+    wildcards: sample=SRR833246
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 100.
+63 of 113 steps (56%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR446040/SRA/SRR446040.sra
+    jobid: 48
+    wildcards: sample=SRR446040
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 48.
+64 of 113 steps (57%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/ERR274309/SRA/ERR274309.sra
+    jobid: 1
+    wildcards: sample=ERR274309
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 1.
+65 of 113 steps (58%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR1260033/SRA/SRR1260033.sra
+    jobid: 21
+    wildcards: sample=SRR1260033
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 21.
+66 of 113 steps (58%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR446027/SRA/SRR446027.sra
+    jobid: 43
+    wildcards: sample=SRR446027
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 43.
+67 of 113 steps (59%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR446486/SRA/SRR446486.sra
+    jobid: 51
+    wildcards: sample=SRR446486
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 51.
+68 of 113 steps (60%) done
+
+[Fri Oct 23 18:16:46 2020]
+rule rename:
+    output: output/SRR401416/SRA/SRR401416.sra
+    jobid: 37
+    wildcards: sample=SRR401416
+
+[Fri Oct 23 18:16:46 2020]
+Finished job 37.
+69 of 113 steps (61%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR527165/SRA/SRR527165.sra
+    jobid: 67
+    wildcards: sample=SRR527165
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 67.
+70 of 113 steps (62%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR345562/SRA/SRR345562.sra
+    jobid: 30
+    wildcards: sample=SRR345562
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 30.
+71 of 113 steps (63%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR653557/SRA/SRR653557.sra
+    jobid: 76
+    wildcards: sample=SRR653557
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 76.
+72 of 113 steps (64%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR1260032/SRA/SRR1260032.sra
+    jobid: 20
+    wildcards: sample=SRR1260032
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 20.
+73 of 113 steps (65%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR653570/SRA/SRR653570.sra
+    jobid: 86
+    wildcards: sample=SRR653570
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 86.
+74 of 113 steps (65%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR1105823/SRA/SRR1105823.sra
+    jobid: 14
+    wildcards: sample=SRR1105823
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 14.
+75 of 113 steps (66%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR504181/SRA/SRR504181.sra
+    jobid: 63
+    wildcards: sample=SRR504181
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 63.
+76 of 113 steps (67%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR1001909/SRA/SRR1001909.sra
+    jobid: 5
+    wildcards: sample=SRR1001909
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 5.
+77 of 113 steps (68%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR949965/SRA/SRR949965.sra
+    jobid: 111
+    wildcards: sample=SRR949965
+
+[Fri Oct 23 18:16:47 2020]
+Finished job 111.
+78 of 113 steps (69%) done
+
+[Fri Oct 23 18:16:47 2020]
+rule rename:
+    output: output/SRR797194/SRA/SRR797194.sra
+    jobid: 96
+    wildcards: sample=SRR797194
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 96.
+79 of 113 steps (70%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR847503/SRA/SRR847503.sra
+    jobid: 103
+    wildcards: sample=SRR847503
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 103.
+80 of 113 steps (71%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR942022/SRA/SRR942022.sra
+    jobid: 109
+    wildcards: sample=SRR942022
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 109.
+81 of 113 steps (72%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR653578/SRA/SRR653578.sra
+    jobid: 94
+    wildcards: sample=SRR653578
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 94.
+82 of 113 steps (73%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR493097/SRA/SRR493097.sra
+    jobid: 56
+    wildcards: sample=SRR493097
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 56.
+83 of 113 steps (73%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR493237/SRA/SRR493237.sra
+    jobid: 59
+    wildcards: sample=SRR493237
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 59.
+84 of 113 steps (74%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR401419/SRA/SRR401419.sra
+    jobid: 40
+    wildcards: sample=SRR401419
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 40.
+85 of 113 steps (75%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR515074/SRA/SRR515074.sra
+    jobid: 65
+    wildcards: sample=SRR515074
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 65.
+86 of 113 steps (76%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR847504/SRA/SRR847504.sra
+    jobid: 104
+    wildcards: sample=SRR847504
+
+[Fri Oct 23 18:16:48 2020]
+Finished job 104.
+87 of 113 steps (77%) done
+
+[Fri Oct 23 18:16:48 2020]
+rule rename:
+    output: output/SRR653561/SRA/SRR653561.sra
+    jobid: 77
+    wildcards: sample=SRR653561
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 77.
+88 of 113 steps (78%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR346552/SRA/SRR346552.sra
+    jobid: 31
+    wildcards: sample=SRR346552
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 31.
+89 of 113 steps (79%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR446484/SRA/SRR446484.sra
+    jobid: 49
+    wildcards: sample=SRR446484
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 49.
+90 of 113 steps (80%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR949989/SRA/SRR949989.sra
+    jobid: 113
+    wildcards: sample=SRR949989
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 113.
+91 of 113 steps (81%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR584129/SRA/SRR584129.sra
+    jobid: 72
+    wildcards: sample=SRR584129
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 72.
+92 of 113 steps (81%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR1049784/SRA/SRR1049784.sra
+    jobid: 12
+    wildcards: sample=SRR1049784
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 12.
+93 of 113 steps (82%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR401414/SRA/SRR401414.sra
+    jobid: 35
+    wildcards: sample=SRR401414
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 35.
+94 of 113 steps (83%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR653565/SRA/SRR653565.sra
+    jobid: 81
+    wildcards: sample=SRR653565
+
+[Fri Oct 23 18:16:49 2020]
+Finished job 81.
+95 of 113 steps (84%) done
+
+[Fri Oct 23 18:16:49 2020]
+rule rename:
+    output: output/SRR653556/SRA/SRR653556.sra
+    jobid: 75
+    wildcards: sample=SRR653556
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 75.
+96 of 113 steps (85%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR653564/SRA/SRR653564.sra
+    jobid: 80
+    wildcards: sample=SRR653564
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 80.
+97 of 113 steps (86%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR477075/SRA/SRR477075.sra
+    jobid: 53
+    wildcards: sample=SRR477075
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 53.
+98 of 113 steps (87%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR346553/SRA/SRR346553.sra
+    jobid: 32
+    wildcards: sample=SRR346553
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 32.
+99 of 113 steps (88%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR1159827/SRA/SRR1159827.sra
+    jobid: 16
+    wildcards: sample=SRR1159827
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 16.
+100 of 113 steps (88%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR800753/SRA/SRR800753.sra
+    jobid: 98
+    wildcards: sample=SRR800753
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 98.
+101 of 113 steps (89%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR504180/SRA/SRR504180.sra
+    jobid: 62
+    wildcards: sample=SRR504180
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 62.
+102 of 113 steps (90%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR1524938/SRA/SRR1524938.sra
+    jobid: 24
+    wildcards: sample=SRR1524938
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 24.
+103 of 113 steps (91%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR401421/SRA/SRR401421.sra
+    jobid: 42
+    wildcards: sample=SRR401421
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 42.
+104 of 113 steps (92%) done
+
+[Fri Oct 23 18:16:50 2020]
+rule rename:
+    output: output/SRR847505/SRA/SRR847505.sra
+    jobid: 105
+    wildcards: sample=SRR847505
+
+[Fri Oct 23 18:16:50 2020]
+Finished job 105.
+105 of 113 steps (93%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR493101/SRA/SRR493101.sra
+    jobid: 58
+    wildcards: sample=SRR493101
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 58.
+106 of 113 steps (94%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR653576/SRA/SRR653576.sra
+    jobid: 92
+    wildcards: sample=SRR653576
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 92.
+107 of 113 steps (95%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR1159837/SRA/SRR1159837.sra
+    jobid: 17
+    wildcards: sample=SRR1159837
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 17.
+108 of 113 steps (96%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR949956/SRA/SRR949956.sra
+    jobid: 110
+    wildcards: sample=SRR949956
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 110.
+109 of 113 steps (96%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR653571/SRA/SRR653571.sra
+    jobid: 87
+    wildcards: sample=SRR653571
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 87.
+110 of 113 steps (97%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR401413/SRA/SRR401413.sra
+    jobid: 34
+    wildcards: sample=SRR401413
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 34.
+111 of 113 steps (98%) done
+
+[Fri Oct 23 18:16:51 2020]
+rule rename:
+    output: output/SRR070571/SRA/SRR070571.sra
+    jobid: 4
+    wildcards: sample=SRR070571
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 4.
+112 of 113 steps (99%) done
+
+[Fri Oct 23 18:16:51 2020]
+localrule all:
+    input: output/ERR274309/SRA/ERR274309.sra, output/ERR274310/SRA/ERR274310.sra, output/SRR070570/SRA/SRR070570.sra, output/SRR070571/SRA/SRR070571.sra, output/SRR1001909/SRA/SRR1001909.sra, output/SRR1001910/SRA/SRR1001910.sra, output/SRR1019221/SRA/SRR1019221.sra, output/SRR1019436/SRA/SRR1019436.sra, output/SRR1019437/SRA/SRR1019437.sra, output/SRR1046909/SRA/SRR1046909.sra, output/SRR1046910/SRA/SRR1046910.sra, output/SRR1049784/SRA/SRR1049784.sra, output/SRR1105822/SRA/SRR1105822.sra, output/SRR1105823/SRA/SRR1105823.sra, output/SRR1159821/SRA/SRR1159821.sra, output/SRR1159827/SRA/SRR1159827.sra, output/SRR1159837/SRA/SRR1159837.sra, output/SRR1207194/SRA/SRR1207194.sra, output/SRR1207195/SRA/SRR1207195.sra, output/SRR1260032/SRA/SRR1260032.sra, output/SRR1260033/SRA/SRR1260033.sra, output/SRR1261509/SRA/SRR1261509.sra, output/SRR1524935/SRA/SRR1524935.sra, output/SRR1524938/SRA/SRR1524938.sra, output/SRR1524940/SRA/SRR1524940.sra, output/SRR314813/SRA/SRR314813.sra, output/SRR314814/SRA/SRR314814.sra, output/SRR314815/SRA/SRR314815.sra, output/SRR345561/SRA/SRR345561.sra, output/SRR345562/SRA/SRR345562.sra, output/SRR346552/SRA/SRR346552.sra, output/SRR346553/SRA/SRR346553.sra, output/SRR394082/SRA/SRR394082.sra, output/SRR401413/SRA/SRR401413.sra, output/SRR401414/SRA/SRR401414.sra, output/SRR401415/SRA/SRR401415.sra, output/SRR401416/SRA/SRR401416.sra, output/SRR401417/SRA/SRR401417.sra, output/SRR401418/SRA/SRR401418.sra, output/SRR401419/SRA/SRR401419.sra, output/SRR401420/SRA/SRR401420.sra, output/SRR401421/SRA/SRR401421.sra, output/SRR446027/SRA/SRR446027.sra, output/SRR446028/SRA/SRR446028.sra, output/SRR446033/SRA/SRR446033.sra, output/SRR446034/SRA/SRR446034.sra, output/SRR446039/SRA/SRR446039.sra, output/SRR446040/SRA/SRR446040.sra, output/SRR446484/SRA/SRR446484.sra, output/SRR446485/SRA/SRR446485.sra, output/SRR446486/SRA/SRR446486.sra, output/SRR446487/SRA/SRR446487.sra, output/SRR477075/SRA/SRR477075.sra, output/SRR477076/SRA/SRR477076.sra, output/SRR493036/SRA/SRR493036.sra, output/SRR493097/SRA/SRR493097.sra, output/SRR493098/SRA/SRR493098.sra, output/SRR493101/SRA/SRR493101.sra, output/SRR493237/SRA/SRR493237.sra, output/SRR493238/SRA/SRR493238.sra, output/SRR504179/SRA/SRR504179.sra, output/SRR504180/SRA/SRR504180.sra, output/SRR504181/SRA/SRR504181.sra, output/SRR515073/SRA/SRR515073.sra, output/SRR515074/SRA/SRR515074.sra, output/SRR527164/SRA/SRR527164.sra, output/SRR527165/SRA/SRR527165.sra, output/SRR547531/SRA/SRR547531.sra, output/SRR548277/SRA/SRR548277.sra, output/SRR584115/SRA/SRR584115.sra, output/SRR584121/SRA/SRR584121.sra, output/SRR584129/SRA/SRR584129.sra, output/SRR584134/SRA/SRR584134.sra, output/SRR653555/SRA/SRR653555.sra, output/SRR653556/SRA/SRR653556.sra, output/SRR653557/SRA/SRR653557.sra, output/SRR653561/SRA/SRR653561.sra, output/SRR653562/SRA/SRR653562.sra, output/SRR653563/SRA/SRR653563.sra, output/SRR653564/SRA/SRR653564.sra, output/SRR653565/SRA/SRR653565.sra, output/SRR653566/SRA/SRR653566.sra, output/SRR653567/SRA/SRR653567.sra, output/SRR653568/SRA/SRR653568.sra, output/SRR653569/SRA/SRR653569.sra, output/SRR653570/SRA/SRR653570.sra, output/SRR653571/SRA/SRR653571.sra, output/SRR653572/SRA/SRR653572.sra, output/SRR653573/SRA/SRR653573.sra, output/SRR653574/SRA/SRR653574.sra, output/SRR653575/SRA/SRR653575.sra, output/SRR653576/SRA/SRR653576.sra, output/SRR653577/SRA/SRR653577.sra, output/SRR653578/SRA/SRR653578.sra, output/SRR764885/SRA/SRR764885.sra, output/SRR797194/SRA/SRR797194.sra, output/SRR797230/SRA/SRR797230.sra, output/SRR800753/SRA/SRR800753.sra, output/SRR800754/SRA/SRR800754.sra, output/SRR833246/SRA/SRR833246.sra, output/SRR847501/SRA/SRR847501.sra, output/SRR847502/SRA/SRR847502.sra, output/SRR847503/SRA/SRR847503.sra, output/SRR847504/SRA/SRR847504.sra, output/SRR847505/SRA/SRR847505.sra, output/SRR847506/SRA/SRR847506.sra, output/SRR924656/SRA/SRR924656.sra, output/SRR934391/SRA/SRR934391.sra, output/SRR942022/SRA/SRR942022.sra, output/SRR949956/SRA/SRR949956.sra, output/SRR949965/SRA/SRR949965.sra, output/SRR949988/SRA/SRR949988.sra, output/SRR949989/SRA/SRR949989.sra
+    jobid: 0
+
+[Fri Oct 23 18:16:51 2020]
+Finished job 0.
+113 of 113 steps (100%) done
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T181639.962936.snakemake.log

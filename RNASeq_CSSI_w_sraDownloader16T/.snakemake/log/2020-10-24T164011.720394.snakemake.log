@@ -1,0 +1,24 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	moveSRA
+	1	sraDownload
+	14
+
+[Sat Oct 24 16:40:13 2020]
+Job 13: ~-~ Downloading sra files... -~-
+
+[Sat Oct 24 16:51:00 2020]
+Finished job 13.
+1 of 14 steps (7%) done
+
+[Sat Oct 24 16:51:00 2020]
+Job 11: ~-~ Moving sra files to respective folders... ~-~
+
+RuleException in line 95 of /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/Snakefile:
+NameError: The name 'sample' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}

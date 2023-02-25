@@ -1,0 +1,540 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	58	fastqdump
+	59
+
+[Fri Oct 23 19:10:36 2020]
+Job 11: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1046910/SRA/SRR1046910.sra --threads 16 -O output/SRR1046910/RAW/ --split-files --gzip
+Submitted job 11 with external jobid '2547839'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 64: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR515073/SRA/SRR515073.sra --threads 16 -O output/SRR515073/RAW/ --split-files --gzip
+Submitted job 64 with external jobid '2547840'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 74: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653555/SRA/SRR653555.sra --threads 16 -O output/SRR653555/RAW/ --split-files --gzip
+Submitted job 74 with external jobid '2547841'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 29: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR345561/SRA/SRR345561.sra --threads 16 -O output/SRR345561/RAW/ --split-files --gzip
+Submitted job 29 with external jobid '2547842'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 96: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR797194/SRA/SRR797194.sra --threads 16 -O output/SRR797194/RAW/ --split-files --gzip
+Submitted job 96 with external jobid '2547843'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 20: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1260032/SRA/SRR1260032.sra --threads 16 -O output/SRR1260032/RAW/ --split-files --gzip
+Submitted job 20 with external jobid '2547844'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 28: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR314815/SRA/SRR314815.sra --threads 16 -O output/SRR314815/RAW/ --split-files --gzip
+Submitted job 28 with external jobid '2547845'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 48: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446040/SRA/SRR446040.sra --threads 16 -O output/SRR446040/RAW/ --split-files --gzip
+Submitted job 48 with external jobid '2547846'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 95: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR764885/SRA/SRR764885.sra --threads 16 -O output/SRR764885/RAW/ --split-files --gzip
+Submitted job 95 with external jobid '2547847'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 81: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653565/SRA/SRR653565.sra --threads 16 -O output/SRR653565/RAW/ --split-files --gzip
+Submitted job 81 with external jobid '2547848'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 102: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847502/SRA/SRR847502.sra --threads 16 -O output/SRR847502/RAW/ --split-files --gzip
+Submitted job 102 with external jobid '2547849'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 111: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR949965/SRA/SRR949965.sra --threads 16 -O output/SRR949965/RAW/ --split-files --gzip
+Submitted job 111 with external jobid '2547850'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 71: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR584121/SRA/SRR584121.sra --threads 16 -O output/SRR584121/RAW/ --split-files --gzip
+Submitted job 71 with external jobid '2547851'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 58: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR493101/SRA/SRR493101.sra --threads 16 -O output/SRR493101/RAW/ --split-files --gzip
+Submitted job 58 with external jobid '2547852'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 91: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653575/SRA/SRR653575.sra --threads 16 -O output/SRR653575/RAW/ --split-files --gzip
+Submitted job 91 with external jobid '2547853'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 32: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR346553/SRA/SRR346553.sra --threads 16 -O output/SRR346553/RAW/ --split-files --gzip
+Submitted job 32 with external jobid '2547854'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 103: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847503/SRA/SRR847503.sra --threads 16 -O output/SRR847503/RAW/ --split-files --gzip
+Submitted job 103 with external jobid '2547855'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 5: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1001909/SRA/SRR1001909.sra --threads 16 -O output/SRR1001909/RAW/ --split-files --gzip
+Submitted job 5 with external jobid '2547856'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 72: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR584129/SRA/SRR584129.sra --threads 16 -O output/SRR584129/RAW/ --split-files --gzip
+Submitted job 72 with external jobid '2547857'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 40: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401419/SRA/SRR401419.sra --threads 16 -O output/SRR401419/RAW/ --split-files --gzip
+Submitted job 40 with external jobid '2547858'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 50: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446485/SRA/SRR446485.sra --threads 16 -O output/SRR446485/RAW/ --split-files --gzip
+Submitted job 50 with external jobid '2547859'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 56: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR493097/SRA/SRR493097.sra --threads 16 -O output/SRR493097/RAW/ --split-files --gzip
+Submitted job 56 with external jobid '2547860'.
+
+[Fri Oct 23 19:10:36 2020]
+Job 92: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653576/SRA/SRR653576.sra --threads 16 -O output/SRR653576/RAW/ --split-files --gzip
+Submitted job 92 with external jobid '2547861'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 9: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019437/SRA/SRR1019437.sra --threads 16 -O output/SRR1019437/RAW/ --split-files --gzip
+Submitted job 9 with external jobid '2547862'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 93: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653577/SRA/SRR653577.sra --threads 16 -O output/SRR653577/RAW/ --split-files --gzip
+Submitted job 93 with external jobid '2547863'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 60: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR493238/SRA/SRR493238.sra --threads 16 -O output/SRR493238/RAW/ --split-files --gzip
+Submitted job 60 with external jobid '2547864'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 25: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1524940/SRA/SRR1524940.sra --threads 16 -O output/SRR1524940/RAW/ --split-files --gzip
+Submitted job 25 with external jobid '2547865'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 70: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR584115/SRA/SRR584115.sra --threads 16 -O output/SRR584115/RAW/ --split-files --gzip
+Submitted job 70 with external jobid '2547866'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 98: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR800753/SRA/SRR800753.sra --threads 16 -O output/SRR800753/RAW/ --split-files --gzip
+Submitted job 98 with external jobid '2547867'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 100: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR833246/SRA/SRR833246.sra --threads 16 -O output/SRR833246/RAW/ --split-files --gzip
+Submitted job 100 with external jobid '2547868'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 16: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1159827/SRA/SRR1159827.sra --threads 16 -O output/SRR1159827/RAW/ --split-files --gzip
+Submitted job 16 with external jobid '2547869'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 7: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019221/SRA/SRR1019221.sra --threads 16 -O output/SRR1019221/RAW/ --split-files --gzip
+Submitted job 7 with external jobid '2547870'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 75: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653556/SRA/SRR653556.sra --threads 16 -O output/SRR653556/RAW/ --split-files --gzip
+Submitted job 75 with external jobid '2547871'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 17: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1159837/SRA/SRR1159837.sra --threads 16 -O output/SRR1159837/RAW/ --split-files --gzip
+Submitted job 17 with external jobid '2547872'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 44: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446028/SRA/SRR446028.sra --threads 16 -O output/SRR446028/RAW/ --split-files --gzip
+Submitted job 44 with external jobid '2547873'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 12: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1049784/SRA/SRR1049784.sra --threads 16 -O output/SRR1049784/RAW/ --split-files --gzip
+Submitted job 12 with external jobid '2547874'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 89: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653573/SRA/SRR653573.sra --threads 16 -O output/SRR653573/RAW/ --split-files --gzip
+Submitted job 89 with external jobid '2547875'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 22: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1261509/SRA/SRR1261509.sra --threads 16 -O output/SRR1261509/RAW/ --split-files --gzip
+Submitted job 22 with external jobid '2547876'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 37: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401416/SRA/SRR401416.sra --threads 16 -O output/SRR401416/RAW/ --split-files --gzip
+Submitted job 37 with external jobid '2547877'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 6: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1001910/SRA/SRR1001910.sra --threads 16 -O output/SRR1001910/RAW/ --split-files --gzip
+Submitted job 6 with external jobid '2547878'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 73: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR584134/SRA/SRR584134.sra --threads 16 -O output/SRR584134/RAW/ --split-files --gzip
+Submitted job 73 with external jobid '2547879'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 24: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1524938/SRA/SRR1524938.sra --threads 16 -O output/SRR1524938/RAW/ --split-files --gzip
+Submitted job 24 with external jobid '2547880'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 88: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653572/SRA/SRR653572.sra --threads 16 -O output/SRR653572/RAW/ --split-files --gzip
+Submitted job 88 with external jobid '2547881'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 14: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105823/SRA/SRR1105823.sra --threads 16 -O output/SRR1105823/RAW/ --split-files --gzip
+Submitted job 14 with external jobid '2547882'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 4: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR070571/SRA/SRR070571.sra --threads 16 -O output/SRR070571/RAW/ --split-files --gzip
+Submitted job 4 with external jobid '2547883'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 31: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR346552/SRA/SRR346552.sra --threads 16 -O output/SRR346552/RAW/ --split-files --gzip
+Submitted job 31 with external jobid '2547884'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019436/SRA/SRR1019436.sra --threads 16 -O output/SRR1019436/RAW/ --split-files --gzip
+Submitted job 8 with external jobid '2547885'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 34: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401413/SRA/SRR401413.sra --threads 16 -O output/SRR401413/RAW/ --split-files --gzip
+Submitted job 34 with external jobid '2547886'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 46: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446034/SRA/SRR446034.sra --threads 16 -O output/SRR446034/RAW/ --split-files --gzip
+Submitted job 46 with external jobid '2547887'.
+
+[Fri Oct 23 19:10:37 2020]
+Job 3: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR070570/SRA/SRR070570.sra --threads 16 -O output/SRR070570/RAW/ --split-files --gzip
+Submitted job 3 with external jobid '2547888'.
+[Fri Oct 23 19:11:12 2020]
+Finished job 111.
+1 of 59 steps (2%) done
+
+[Fri Oct 23 19:11:12 2020]
+Job 65: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR515074/SRA/SRR515074.sra --threads 16 -O output/SRR515074/RAW/ --split-files --gzip
+Submitted job 65 with external jobid '2547889'.
+[Fri Oct 23 19:12:49 2020]
+Finished job 11.
+2 of 59 steps (3%) done
+
+[Fri Oct 23 19:12:49 2020]
+Job 57: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR493098/SRA/SRR493098.sra --threads 16 -O output/SRR493098/RAW/ --split-files --gzip
+Submitted job 57 with external jobid '2547890'.
+[Fri Oct 23 19:12:51 2020]
+Finished job 64.
+3 of 59 steps (5%) done
+
+[Fri Oct 23 19:12:51 2020]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/ERR274309/SRA/ERR274309.sra --threads 16 -O output/ERR274309/RAW/ --split-files --gzip
+Submitted job 1 with external jobid '2547891'.
+[Fri Oct 23 19:12:53 2020]
+Finished job 74.
+4 of 59 steps (7%) done
+
+[Fri Oct 23 19:12:53 2020]
+Job 86: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653570/SRA/SRR653570.sra --threads 16 -O output/SRR653570/RAW/ --split-files --gzip
+Submitted job 86 with external jobid '2547892'.
+[Fri Oct 23 19:12:55 2020]
+Finished job 29.
+5 of 59 steps (8%) done
+
+[Fri Oct 23 19:12:55 2020]
+Job 45: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446033/SRA/SRR446033.sra --threads 16 -O output/SRR446033/RAW/ --split-files --gzip
+Submitted job 45 with external jobid '2547893'.
+[Fri Oct 23 19:12:57 2020]
+Finished job 96.
+6 of 59 steps (10%) done
+
+[Fri Oct 23 19:12:57 2020]
+Job 36: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401415/SRA/SRR401415.sra --threads 16 -O output/SRR401415/RAW/ --split-files --gzip
+Submitted job 36 with external jobid '2547894'.
+[Fri Oct 23 19:12:59 2020]
+Finished job 20.
+7 of 59 steps (12%) done
+
+[Fri Oct 23 19:12:59 2020]
+Job 99: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR800754/SRA/SRR800754.sra --threads 16 -O output/SRR800754/RAW/ --split-files --gzip
+Submitted job 99 with external jobid '2547895'.
+[Fri Oct 23 19:13:02 2020]
+Finished job 28.
+8 of 59 steps (14%) done
+
+[Fri Oct 23 19:13:02 2020]
+Job 13: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105822/SRA/SRR1105822.sra --threads 16 -O output/SRR1105822/RAW/ --split-files --gzip
+Submitted job 13 with external jobid '2547896'.
+[Fri Oct 23 19:13:08 2020]
+Finished job 81.
+9 of 59 steps (15%) done
+[Fri Oct 23 19:13:10 2020]
+Finished job 102.
+10 of 59 steps (17%) done
+[Fri Oct 23 19:13:15 2020]
+Finished job 58.
+11 of 59 steps (19%) done
+[Fri Oct 23 19:13:17 2020]
+Finished job 91.
+12 of 59 steps (20%) done
+[Fri Oct 23 19:13:19 2020]
+Finished job 32.
+13 of 59 steps (22%) done
+[Fri Oct 23 19:13:21 2020]
+Finished job 103.
+14 of 59 steps (24%) done
+[Fri Oct 23 19:13:23 2020]
+Finished job 5.
+15 of 59 steps (25%) done
+[Fri Oct 23 19:13:27 2020]
+Finished job 40.
+16 of 59 steps (27%) done
+[Fri Oct 23 19:13:34 2020]
+Finished job 92.
+17 of 59 steps (29%) done
+[Fri Oct 23 19:13:38 2020]
+Finished job 93.
+18 of 59 steps (31%) done
+[Fri Oct 23 19:15:02 2020]
+Finished job 48.
+19 of 59 steps (32%) done
+[Fri Oct 23 19:15:04 2020]
+Finished job 95.
+20 of 59 steps (34%) done
+[Fri Oct 23 19:15:06 2020]
+Finished job 71.
+21 of 59 steps (36%) done
+[Fri Oct 23 19:15:09 2020]
+Finished job 72.
+22 of 59 steps (37%) done
+[Fri Oct 23 19:15:11 2020]
+Finished job 50.
+23 of 59 steps (39%) done
+[Fri Oct 23 19:15:13 2020]
+Finished job 56.
+24 of 59 steps (41%) done
+[Fri Oct 23 19:15:15 2020]
+Finished job 9.
+25 of 59 steps (42%) done
+[Fri Oct 23 19:15:17 2020]
+Finished job 60.
+26 of 59 steps (44%) done
+[Fri Oct 23 19:15:19 2020]
+Finished job 25.
+27 of 59 steps (46%) done
+[Fri Oct 23 19:15:24 2020]
+Finished job 98.
+28 of 59 steps (47%) done
+[Fri Oct 23 19:15:28 2020]
+Finished job 16.
+29 of 59 steps (49%) done
+[Fri Oct 23 19:15:32 2020]
+Finished job 75.
+30 of 59 steps (51%) done
+[Fri Oct 23 19:15:34 2020]
+Finished job 17.
+31 of 59 steps (53%) done
+[Fri Oct 23 19:15:41 2020]
+Finished job 89.
+32 of 59 steps (54%) done
+[Fri Oct 23 19:15:47 2020]
+Finished job 6.
+33 of 59 steps (56%) done
+[Fri Oct 23 19:15:58 2020]
+Finished job 4.
+34 of 59 steps (58%) done
+[Fri Oct 23 19:16:41 2020]
+Finished job 100.
+35 of 59 steps (59%) done
+[Fri Oct 23 19:16:47 2020]
+Finished job 12.
+36 of 59 steps (61%) done
+[Fri Oct 23 19:16:52 2020]
+Finished job 37.
+37 of 59 steps (63%) done
+[Fri Oct 23 19:16:56 2020]
+Finished job 24.
+38 of 59 steps (64%) done
+[Fri Oct 23 19:16:58 2020]
+Finished job 88.
+39 of 59 steps (66%) done
+[Fri Oct 23 19:17:11 2020]
+Finished job 3.
+40 of 59 steps (68%) done
+[Fri Oct 23 19:17:38 2020]
+Finished job 65.
+41 of 59 steps (69%) done
+[Fri Oct 23 19:17:40 2020]
+Finished job 70.
+42 of 59 steps (71%) done
+[Fri Oct 23 19:17:43 2020]
+Finished job 7.
+43 of 59 steps (73%) done
+[Fri Oct 23 19:17:45 2020]
+Finished job 44.
+44 of 59 steps (75%) done
+[Fri Oct 23 19:17:47 2020]
+Finished job 22.
+45 of 59 steps (76%) done
+[Fri Oct 23 19:17:53 2020]
+Finished job 31.
+46 of 59 steps (78%) done
+[Fri Oct 23 19:17:56 2020]
+Finished job 8.
+47 of 59 steps (80%) done
+[Fri Oct 23 19:17:58 2020]
+Finished job 34.
+48 of 59 steps (81%) done
+[Fri Oct 23 19:18:12 2020]
+Finished job 57.
+49 of 59 steps (83%) done
+[Fri Oct 23 19:18:16 2020]
+Finished job 86.
+50 of 59 steps (85%) done
+[Fri Oct 23 19:18:23 2020]
+Finished job 99.
+51 of 59 steps (86%) done
+[Fri Oct 23 19:18:27 2020]
+Finished job 73.
+52 of 59 steps (88%) done
+[Fri Oct 23 19:18:29 2020]
+Finished job 14.
+53 of 59 steps (90%) done
+[Fri Oct 23 19:18:44 2020]
+Finished job 1.
+54 of 59 steps (92%) done
+[Fri Oct 23 19:18:48 2020]
+Finished job 36.
+55 of 59 steps (93%) done
+[Fri Oct 23 19:19:40 2020]
+Finished job 13.
+56 of 59 steps (95%) done
+[Fri Oct 23 19:19:56 2020]
+Finished job 46.
+57 of 59 steps (97%) done
+[Fri Oct 23 19:20:45 2020]
+Finished job 45.
+58 of 59 steps (98%) done
+
+[Fri Oct 23 19:20:45 2020]
+localrule all:
+    input: output/ERR274309/RAW/ERR274309_1.fastq.gz, output/ERR274310/RAW/ERR274310_1.fastq.gz, output/SRR070570/RAW/SRR070570_1.fastq.gz, output/SRR070571/RAW/SRR070571_1.fastq.gz, output/SRR1001909/RAW/SRR1001909_1.fastq.gz, output/SRR1001910/RAW/SRR1001910_1.fastq.gz, output/SRR1019221/RAW/SRR1019221_1.fastq.gz, output/SRR1019436/RAW/SRR1019436_1.fastq.gz, output/SRR1019437/RAW/SRR1019437_1.fastq.gz, output/SRR1046909/RAW/SRR1046909_1.fastq.gz, output/SRR1046910/RAW/SRR1046910_1.fastq.gz, output/SRR1049784/RAW/SRR1049784_1.fastq.gz, output/SRR1105822/RAW/SRR1105822_1.fastq.gz, output/SRR1105823/RAW/SRR1105823_1.fastq.gz, output/SRR1159821/RAW/SRR1159821_1.fastq.gz, output/SRR1159827/RAW/SRR1159827_1.fastq.gz, output/SRR1159837/RAW/SRR1159837_1.fastq.gz, output/SRR1207194/RAW/SRR1207194_1.fastq.gz, output/SRR1207195/RAW/SRR1207195_1.fastq.gz, output/SRR1260032/RAW/SRR1260032_1.fastq.gz, output/SRR1260033/RAW/SRR1260033_1.fastq.gz, output/SRR1261509/RAW/SRR1261509_1.fastq.gz, output/SRR1524935/RAW/SRR1524935_1.fastq.gz, output/SRR1524938/RAW/SRR1524938_1.fastq.gz, output/SRR1524940/RAW/SRR1524940_1.fastq.gz, output/SRR314813/RAW/SRR314813_1.fastq.gz, output/SRR314814/RAW/SRR314814_1.fastq.gz, output/SRR314815/RAW/SRR314815_1.fastq.gz, output/SRR345561/RAW/SRR345561_1.fastq.gz, output/SRR345562/RAW/SRR345562_1.fastq.gz, output/SRR346552/RAW/SRR346552_1.fastq.gz, output/SRR346553/RAW/SRR346553_1.fastq.gz, output/SRR394082/RAW/SRR394082_1.fastq.gz, output/SRR401413/RAW/SRR401413_1.fastq.gz, output/SRR401414/RAW/SRR401414_1.fastq.gz, output/SRR401415/RAW/SRR401415_1.fastq.gz, output/SRR401416/RAW/SRR401416_1.fastq.gz, output/SRR401417/RAW/SRR401417_1.fastq.gz, output/SRR401418/RAW/SRR401418_1.fastq.gz, output/SRR401419/RAW/SRR401419_1.fastq.gz, output/SRR401420/RAW/SRR401420_1.fastq.gz, output/SRR401421/RAW/SRR401421_1.fastq.gz, output/SRR446027/RAW/SRR446027_1.fastq.gz, output/SRR446028/RAW/SRR446028_1.fastq.gz, output/SRR446033/RAW/SRR446033_1.fastq.gz, output/SRR446034/RAW/SRR446034_1.fastq.gz, output/SRR446039/RAW/SRR446039_1.fastq.gz, output/SRR446040/RAW/SRR446040_1.fastq.gz, output/SRR446484/RAW/SRR446484_1.fastq.gz, output/SRR446485/RAW/SRR446485_1.fastq.gz, output/SRR446486/RAW/SRR446486_1.fastq.gz, output/SRR446487/RAW/SRR446487_1.fastq.gz, output/SRR477075/RAW/SRR477075_1.fastq.gz, output/SRR477076/RAW/SRR477076_1.fastq.gz, output/SRR493036/RAW/SRR493036_1.fastq.gz, output/SRR493097/RAW/SRR493097_1.fastq.gz, output/SRR493098/RAW/SRR493098_1.fastq.gz, output/SRR493101/RAW/SRR493101_1.fastq.gz, output/SRR493237/RAW/SRR493237_1.fastq.gz, output/SRR493238/RAW/SRR493238_1.fastq.gz, output/SRR504179/RAW/SRR504179_1.fastq.gz, output/SRR504180/RAW/SRR504180_1.fastq.gz, output/SRR504181/RAW/SRR504181_1.fastq.gz, output/SRR515073/RAW/SRR515073_1.fastq.gz, output/SRR515074/RAW/SRR515074_1.fastq.gz, output/SRR527164/RAW/SRR527164_1.fastq.gz, output/SRR527165/RAW/SRR527165_1.fastq.gz, output/SRR547531/RAW/SRR547531_1.fastq.gz, output/SRR548277/RAW/SRR548277_1.fastq.gz, output/SRR584115/RAW/SRR584115_1.fastq.gz, output/SRR584121/RAW/SRR584121_1.fastq.gz, output/SRR584129/RAW/SRR584129_1.fastq.gz, output/SRR584134/RAW/SRR584134_1.fastq.gz, output/SRR653555/RAW/SRR653555_1.fastq.gz, output/SRR653556/RAW/SRR653556_1.fastq.gz, output/SRR653557/RAW/SRR653557_1.fastq.gz, output/SRR653561/RAW/SRR653561_1.fastq.gz, output/SRR653562/RAW/SRR653562_1.fastq.gz, output/SRR653563/RAW/SRR653563_1.fastq.gz, output/SRR653564/RAW/SRR653564_1.fastq.gz, output/SRR653565/RAW/SRR653565_1.fastq.gz, output/SRR653566/RAW/SRR653566_1.fastq.gz, output/SRR653567/RAW/SRR653567_1.fastq.gz, output/SRR653568/RAW/SRR653568_1.fastq.gz, output/SRR653569/RAW/SRR653569_1.fastq.gz, output/SRR653570/RAW/SRR653570_1.fastq.gz, output/SRR653571/RAW/SRR653571_1.fastq.gz, output/SRR653572/RAW/SRR653572_1.fastq.gz, output/SRR653573/RAW/SRR653573_1.fastq.gz, output/SRR653574/RAW/SRR653574_1.fastq.gz, output/SRR653575/RAW/SRR653575_1.fastq.gz, output/SRR653576/RAW/SRR653576_1.fastq.gz, output/SRR653577/RAW/SRR653577_1.fastq.gz, output/SRR653578/RAW/SRR653578_1.fastq.gz, output/SRR764885/RAW/SRR764885_1.fastq.gz, output/SRR797194/RAW/SRR797194_1.fastq.gz, output/SRR797230/RAW/SRR797230_1.fastq.gz, output/SRR800753/RAW/SRR800753_1.fastq.gz, output/SRR800754/RAW/SRR800754_1.fastq.gz, output/SRR833246/RAW/SRR833246_1.fastq.gz, output/SRR847501/RAW/SRR847501_1.fastq.gz, output/SRR847502/RAW/SRR847502_1.fastq.gz, output/SRR847503/RAW/SRR847503_1.fastq.gz, output/SRR847504/RAW/SRR847504_1.fastq.gz, output/SRR847505/RAW/SRR847505_1.fastq.gz, output/SRR847506/RAW/SRR847506_1.fastq.gz, output/SRR924656/RAW/SRR924656_1.fastq.gz, output/SRR934391/RAW/SRR934391_1.fastq.gz, output/SRR942022/RAW/SRR942022_1.fastq.gz, output/SRR949956/RAW/SRR949956_1.fastq.gz, output/SRR949965/RAW/SRR949965_1.fastq.gz, output/SRR949988/RAW/SRR949988_1.fastq.gz, output/SRR949989/RAW/SRR949989_1.fastq.gz
+    jobid: 0
+
+[Fri Oct 23 19:20:45 2020]
+Finished job 0.
+59 of 59 steps (100%) done
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T191034.648861.snakemake.log

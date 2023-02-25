@@ -1,0 +1,252 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Migrating .snakemake folder to new format...
+Migration complete
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job stats:
+job           count    min threads    max threads
+----------  -------  -------------  -------------
+TPM               1              1              1
+all               1              1              1
+diffexpr          1              1              1
+fastqdump        12             16             16
+mapping          12             16             16
+readscount        1             16             16
+rundeg            1              1              1
+trimming         12             16             16
+total            41              1             16
+
+Select jobs to execute...
+
+[Tue Nov 30 15:21:09 2021]
+Job 10: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015225/SRA/SRR4015225.sra --threads 16 -O output/SRR4015225/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 10 with external jobid '2946490'.
+
+[Tue Nov 30 15:21:09 2021]
+Job 24: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015218/SRA/SRR4015218.sra --threads 16 -O output/SRR4015218/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 24 with external jobid '2946491'.
+
+[Tue Nov 30 15:21:09 2021]
+Job 12: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015226/SRA/SRR4015226.sra --threads 16 -O output/SRR4015226/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 12 with external jobid '2946492'.
+
+[Tue Nov 30 15:21:09 2021]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015222/SRA/SRR4015222.sra --threads 16 -O output/SRR4015222/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 1 with external jobid '2946493'.
+
+[Tue Nov 30 15:21:09 2021]
+Job 20: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015229/SRA/SRR4015229.sra --threads 16 -O output/SRR4015229/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 20 with external jobid '2946494'.
+
+[Tue Nov 30 15:21:09 2021]
+Job 4: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015224/SRA/SRR4015224.sra --threads 16 -O output/SRR4015224/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 4 with external jobid '2946495'.
+
+[Tue Nov 30 15:21:10 2021]
+Job 14: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015216/SRA/SRR4015216.sra --threads 16 -O output/SRR4015216/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 14 with external jobid '2946496'.
+
+[Tue Nov 30 15:21:10 2021]
+Job 16: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015217/SRA/SRR4015217.sra --threads 16 -O output/SRR4015217/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 16 with external jobid '2946497'.
+
+[Tue Nov 30 15:21:10 2021]
+Job 18: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015228/SRA/SRR4015228.sra --threads 16 -O output/SRR4015228/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 18 with external jobid '2946498'.
+
+[Tue Nov 30 15:21:10 2021]
+Job 22: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015231/SRA/SRR4015231.sra --threads 16 -O output/SRR4015231/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 22 with external jobid '2946499'.
+
+[Tue Nov 30 15:21:10 2021]
+Job 6: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015214/SRA/SRR4015214.sra --threads 16 -O output/SRR4015214/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 6 with external jobid '2946500'.
+
+[Tue Nov 30 15:21:10 2021]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR3657709/SRA/SRR3657709.sra --threads 16 -O output/SRR3657709/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 8 with external jobid '2946501'.
+[Tue Nov 30 15:24:05 2021]
+Finished job 22.
+1 of 41 steps (2%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:24:05 2021]
+Job 36: -~- Trimming fastq files... -~-
+
+Submitted job 36 with external jobid '2946502'.
+[Tue Nov 30 15:25:08 2021]
+Finished job 20.
+2 of 41 steps (5%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:25:08 2021]
+Job 35: -~- Trimming fastq files... -~-
+
+Submitted job 35 with external jobid '2946503'.
+[Tue Nov 30 15:25:12 2021]
+Finished job 14.
+3 of 41 steps (7%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:25:12 2021]
+Job 32: -~- Trimming fastq files... -~-
+
+Submitted job 32 with external jobid '2946504'.
+[Tue Nov 30 15:25:14 2021]
+Finished job 16.
+4 of 41 steps (10%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:25:14 2021]
+Job 33: -~- Trimming fastq files... -~-
+
+Submitted job 33 with external jobid '2946505'.
+[Tue Nov 30 15:25:16 2021]
+Finished job 18.
+5 of 41 steps (12%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:25:16 2021]
+Job 34: -~- Trimming fastq files... -~-
+
+Submitted job 34 with external jobid '2946506'.
+[Tue Nov 30 15:25:52 2021]
+Finished job 4.
+6 of 41 steps (15%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:25:52 2021]
+Job 27: -~- Trimming fastq files... -~-
+
+Submitted job 27 with external jobid '2946515'.
+[Tue Nov 30 15:26:24 2021]
+Finished job 24.
+7 of 41 steps (17%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:26:24 2021]
+Job 37: -~- Trimming fastq files... -~-
+
+Submitted job 37 with external jobid '2946516'.
+[Tue Nov 30 15:26:29 2021]
+Finished job 1.
+8 of 41 steps (20%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:26:29 2021]
+Job 26: -~- Trimming fastq files... -~-
+
+Submitted job 26 with external jobid '2946517'.
+[Tue Nov 30 15:26:31 2021]
+Finished job 6.
+9 of 41 steps (22%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:26:31 2021]
+Job 28: -~- Trimming fastq files... -~-
+
+Submitted job 28 with external jobid '2946518'.
+[Tue Nov 30 15:26:33 2021]
+Finished job 8.
+10 of 41 steps (24%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:26:33 2021]
+Job 29: -~- Trimming fastq files... -~-
+
+Submitted job 29 with external jobid '2946519'.
+[Tue Nov 30 15:27:04 2021]
+Finished job 10.
+11 of 41 steps (27%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:27:04 2021]
+Job 30: -~- Trimming fastq files... -~-
+
+Submitted job 30 with external jobid '2946520'.
+[Tue Nov 30 15:27:07 2021]
+Finished job 12.
+12 of 41 steps (29%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:27:07 2021]
+Job 31: -~- Trimming fastq files... -~-
+
+Submitted job 31 with external jobid '2946521'.
+[Tue Nov 30 15:30:43 2021]
+Finished job 36.
+13 of 41 steps (32%) done
+Select jobs to execute...
+
+[Tue Nov 30 15:30:43 2021]
+Job 48: -~- Mapping... -~-
+
+Submitted job 48 with external jobid '2946522'.
+[Tue Nov 30 15:30:57 2021]
+Error in rule mapping:
+    jobid: 48
+    output: output/SRR4015231/SRR4015231Aligned.sortedByCoord.out.bam
+    cluster_jobid: 2946522
+
+Error executing rule mapping on cluster (jobid: 48, external: 2946522, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.nwb098he/snakejob.mapping.48.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 15:33:27 2021]
+Finished job 35.
+14 of 41 steps (34%) done
+[Tue Nov 30 15:34:01 2021]
+Finished job 32.
+15 of 41 steps (37%) done
+[Tue Nov 30 15:34:05 2021]
+Finished job 34.
+16 of 41 steps (39%) done
+[Tue Nov 30 15:34:33 2021]
+Finished job 33.
+17 of 41 steps (41%) done
+[Tue Nov 30 15:37:03 2021]
+Finished job 27.
+18 of 41 steps (44%) done
+[Tue Nov 30 15:38:33 2021]
+Finished job 26.
+19 of 41 steps (46%) done
+[Tue Nov 30 15:38:54 2021]
+Finished job 37.
+20 of 41 steps (49%) done
+[Tue Nov 30 15:38:56 2021]
+Finished job 28.
+21 of 41 steps (51%) done
+[Tue Nov 30 15:38:58 2021]
+Finished job 29.
+22 of 41 steps (54%) done
+[Tue Nov 30 15:40:22 2021]
+Finished job 30.
+23 of 41 steps (56%) done
+[Tue Nov 30 15:41:49 2021]
+Finished job 31.
+24 of 41 steps (59%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2021-11-30T152103.528633.snakemake.log

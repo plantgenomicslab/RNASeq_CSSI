@@ -1,0 +1,10 @@
+FileNotFoundError in line 4 of /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/Snakefile:
+[Errno 2] File data/passes.txt does not exist: 'data/passes.txt'
+  File "/data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/Snakefile", line 4, in <module>
+  File "/data/gpfs/home/flunalopez/.local/pipx/venvs/python-dev-tools/lib/python3.7/site-packages/pandas-1.0.0rc0-py3.7-linux-x86_64.egg/pandas/io/parsers.py", line 676, in parser_f
+  File "/data/gpfs/home/flunalopez/.local/pipx/venvs/python-dev-tools/lib/python3.7/site-packages/pandas-1.0.0rc0-py3.7-linux-x86_64.egg/pandas/io/parsers.py", line 448, in _read
+  File "/data/gpfs/home/flunalopez/.local/pipx/venvs/python-dev-tools/lib/python3.7/site-packages/pandas-1.0.0rc0-py3.7-linux-x86_64.egg/pandas/io/parsers.py", line 880, in __init__
+  File "/data/gpfs/home/flunalopez/.local/pipx/venvs/python-dev-tools/lib/python3.7/site-packages/pandas-1.0.0rc0-py3.7-linux-x86_64.egg/pandas/io/parsers.py", line 1114, in _make_engine
+  File "/data/gpfs/home/flunalopez/.local/pipx/venvs/python-dev-tools/lib/python3.7/site-packages/pandas-1.0.0rc0-py3.7-linux-x86_64.egg/pandas/io/parsers.py", line 1891, in __init__
+  File "pandas/_libs/parsers.pyx", line 374, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 673, in pandas._libs.parsers.TextReader._setup_parser_source

@@ -1,0 +1,26 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	TPM
+	1	all
+	1	diffexpr
+	12	fastqdump
+	12	mapping
+	12	moveSRA
+	1	readscount
+	1	rundeg
+	1	sraDownload
+	12	trimming
+	54
+
+[Sat Oct 24 16:31:38 2020]
+Job 53: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRA/
+Submitted job 53 with external jobid '2548124'.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Cancelling snakemake on user request.

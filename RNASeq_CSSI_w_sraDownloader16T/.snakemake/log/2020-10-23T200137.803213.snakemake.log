@@ -1,0 +1,152 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	TPM
+	1	all
+	1	diffexpr
+	12	mapping
+	1	readscount
+	1	rundeg
+	17
+
+[Fri Oct 23 20:01:41 2020]
+Job 29: -~- Mapping... -~-
+
+Submitted job 29 with external jobid '2547944'.
+
+[Fri Oct 23 20:01:41 2020]
+Job 32: -~- Mapping... -~-
+
+Submitted job 32 with external jobid '2547945'.
+
+[Fri Oct 23 20:01:41 2020]
+Job 28: -~- Mapping... -~-
+
+Submitted job 28 with external jobid '2547946'.
+
+[Fri Oct 23 20:01:41 2020]
+Job 34: -~- Mapping... -~-
+
+Submitted job 34 with external jobid '2547947'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 35: -~- Mapping... -~-
+
+Submitted job 35 with external jobid '2547948'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 30: -~- Mapping... -~-
+
+Submitted job 30 with external jobid '2547949'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 36: -~- Mapping... -~-
+
+Submitted job 36 with external jobid '2547950'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 33: -~- Mapping... -~-
+
+Submitted job 33 with external jobid '2547951'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 31: -~- Mapping... -~-
+
+Submitted job 31 with external jobid '2547952'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 27: -~- Mapping... -~-
+
+Submitted job 27 with external jobid '2547953'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 25: -~- Mapping... -~-
+
+Submitted job 25 with external jobid '2547954'.
+
+[Fri Oct 23 20:01:42 2020]
+Job 26: -~- Mapping... -~-
+
+Submitted job 26 with external jobid '2547955'.
+[Fri Oct 23 20:03:44 2020]
+Finished job 32.
+1 of 17 steps (6%) done
+[Fri Oct 23 20:03:46 2020]
+Finished job 28.
+2 of 17 steps (12%) done
+[Fri Oct 23 20:04:22 2020]
+Finished job 35.
+3 of 17 steps (18%) done
+[Fri Oct 23 20:04:35 2020]
+Finished job 25.
+4 of 17 steps (24%) done
+[Fri Oct 23 20:05:19 2020]
+Finished job 34.
+5 of 17 steps (29%) done
+[Fri Oct 23 20:05:23 2020]
+Finished job 36.
+6 of 17 steps (35%) done
+[Fri Oct 23 20:05:25 2020]
+Finished job 33.
+7 of 17 steps (41%) done
+[Fri Oct 23 20:05:28 2020]
+Finished job 31.
+8 of 17 steps (47%) done
+[Fri Oct 23 20:05:46 2020]
+Finished job 30.
+9 of 17 steps (53%) done
+[Fri Oct 23 20:06:03 2020]
+Finished job 29.
+10 of 17 steps (59%) done
+[Fri Oct 23 20:06:34 2020]
+Finished job 27.
+11 of 17 steps (65%) done
+[Fri Oct 23 20:06:36 2020]
+Finished job 26.
+12 of 17 steps (71%) done
+
+[Fri Oct 23 20:06:36 2020]
+Job 40: -~- Generating feature counts... -~-
+
+featureCounts -p -Q 10 -M --fraction -s 0 -T 16 -o output/featureCount.cnt  -a ./ref/TAIR10.gtf output/SRR934391/SRR934391Aligned.sortedByCoord.out.bam output/SRR764885/SRR764885Aligned.sortedByCoord.out.bam output/SRR446040/SRR446040Aligned.sortedByCoord.out.bam output/SRR446039/SRR446039Aligned.sortedByCoord.out.bam output/SRR446034/SRR446034Aligned.sortedByCoord.out.bam output/SRR446033/SRR446033Aligned.sortedByCoord.out.bam output/SRR446028/SRR446028Aligned.sortedByCoord.out.bam output/SRR446027/SRR446027Aligned.sortedByCoord.out.bam output/SRR1261509/SRR1261509Aligned.sortedByCoord.out.bam output/SRR1105823/SRR1105823Aligned.sortedByCoord.out.bam output/SRR1105822/SRR1105822Aligned.sortedByCoord.out.bam output/SRR1019221/SRR1019221Aligned.sortedByCoord.out.bam; python src/fix_featCnt_header.py output/featureCount.cnt
+Submitted job 40 with external jobid '2547956'.
+[Fri Oct 23 20:08:25 2020]
+Finished job 40.
+13 of 17 steps (76%) done
+
+[Fri Oct 23 20:08:25 2020]
+Job 37: -~- Generating analysis... -~-
+
+run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+Submitted job 37 with external jobid '2547957'.
+
+[Fri Oct 23 20:08:25 2020]
+Job 38: -~- Generating TPM file... -~-
+
+cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+Submitted job 38 with external jobid '2547958'.
+[Fri Oct 23 20:08:37 2020]
+Error in rule rundeg:
+    jobid: 37
+    output: output/rundeg_featureCount
+    shell:
+        run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547957
+
+Error executing rule rundeg on cluster (jobid: 37, external: 2547957, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.fh6p5d1u/snakejob.rundeg.37.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 20:08:40 2020]
+Error in rule TPM:
+    jobid: 38
+    output: output/featureCount.cnt_for_tpm.tpm.tab
+    shell:
+        cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547958
+
+Error executing rule TPM on cluster (jobid: 38, external: 2547958, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.fh6p5d1u/snakejob.TPM.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T200137.803213.snakemake.log

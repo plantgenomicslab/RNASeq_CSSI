@@ -1,0 +1,214 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	11	fastqdump
+	12	trimming
+	24
+
+[Fri Oct 23 19:45:58 2020]
+Job 11: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105822/SRA/SRR1105822.sra --threads 16 -O output/SRR1105822/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 11 with external jobid '2547921'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 10: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105823/SRA/SRR1105823.sra --threads 16 -O output/SRR1105823/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 10 with external jobid '2547922'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 12: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019221/SRA/SRR1019221.sra --threads 16 -O output/SRR1019221/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 12 with external jobid '2547923'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 4: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446039/SRA/SRR446039.sra --threads 16 -O output/SRR446039/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 4 with external jobid '2547924'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 2: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR764885/SRA/SRR764885.sra --threads 16 -O output/SRR764885/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 2 with external jobid '2547925'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR934391/SRA/SRR934391.sra --threads 16 -O output/SRR934391/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 1 with external jobid '2547926'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 5: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446034/SRA/SRR446034.sra --threads 16 -O output/SRR446034/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 5 with external jobid '2547927'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 6: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446033/SRA/SRR446033.sra --threads 16 -O output/SRR446033/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 6 with external jobid '2547928'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 7: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446028/SRA/SRR446028.sra --threads 16 -O output/SRR446028/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 7 with external jobid '2547929'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446027/SRA/SRR446027.sra --threads 16 -O output/SRR446027/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 8 with external jobid '2547930'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 9: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1261509/SRA/SRR1261509.sra --threads 16 -O output/SRR1261509/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 9 with external jobid '2547931'.
+
+[Fri Oct 23 19:45:58 2020]
+Job 15: -~- Trimming fastq files... -~-
+
+Submitted job 15 with external jobid '2547932'.
+[Fri Oct 23 19:48:04 2020]
+Finished job 4.
+1 of 24 steps (4%) done
+
+[Fri Oct 23 19:48:04 2020]
+Job 16: -~- Trimming fastq files... -~-
+
+Submitted job 16 with external jobid '2547933'.
+[Fri Oct 23 19:48:17 2020]
+Finished job 8.
+2 of 24 steps (8%) done
+
+[Fri Oct 23 19:48:17 2020]
+Job 20: -~- Trimming fastq files... -~-
+
+Submitted job 20 with external jobid '2547934'.
+[Fri Oct 23 19:48:38 2020]
+Finished job 11.
+3 of 24 steps (12%) done
+
+[Fri Oct 23 19:48:38 2020]
+Job 23: -~- Trimming fastq files... -~-
+
+Submitted job 23 with external jobid '2547935'.
+[Fri Oct 23 19:48:47 2020]
+Finished job 1.
+4 of 24 steps (17%) done
+
+[Fri Oct 23 19:48:47 2020]
+Job 13: -~- Trimming fastq files... -~-
+
+Submitted job 13 with external jobid '2547936'.
+[Fri Oct 23 19:49:19 2020]
+Finished job 10.
+5 of 24 steps (21%) done
+
+[Fri Oct 23 19:49:19 2020]
+Job 22: -~- Trimming fastq files... -~-
+
+Submitted job 22 with external jobid '2547937'.
+[Fri Oct 23 19:49:21 2020]
+Finished job 12.
+6 of 24 steps (25%) done
+
+[Fri Oct 23 19:49:21 2020]
+Job 24: -~- Trimming fastq files... -~-
+
+Submitted job 24 with external jobid '2547938'.
+[Fri Oct 23 19:49:23 2020]
+Finished job 2.
+7 of 24 steps (29%) done
+
+[Fri Oct 23 19:49:23 2020]
+Job 14: -~- Trimming fastq files... -~-
+
+Submitted job 14 with external jobid '2547939'.
+[Fri Oct 23 19:50:01 2020]
+Finished job 5.
+8 of 24 steps (33%) done
+
+[Fri Oct 23 19:50:01 2020]
+Job 17: -~- Trimming fastq files... -~-
+
+Submitted job 17 with external jobid '2547940'.
+[Fri Oct 23 19:50:03 2020]
+Finished job 6.
+9 of 24 steps (38%) done
+
+[Fri Oct 23 19:50:03 2020]
+Job 18: -~- Trimming fastq files... -~-
+
+Submitted job 18 with external jobid '2547941'.
+[Fri Oct 23 19:50:06 2020]
+Finished job 7.
+10 of 24 steps (42%) done
+
+[Fri Oct 23 19:50:06 2020]
+Job 19: -~- Trimming fastq files... -~-
+
+Submitted job 19 with external jobid '2547942'.
+[Fri Oct 23 19:51:20 2020]
+Finished job 9.
+11 of 24 steps (46%) done
+
+[Fri Oct 23 19:51:20 2020]
+Job 21: -~- Trimming fastq files... -~-
+
+Submitted job 21 with external jobid '2547943'.
+[Fri Oct 23 19:52:30 2020]
+Finished job 16.
+12 of 24 steps (50%) done
+[Fri Oct 23 19:53:06 2020]
+Finished job 20.
+13 of 24 steps (54%) done
+[Fri Oct 23 19:54:39 2020]
+Finished job 23.
+14 of 24 steps (58%) done
+[Fri Oct 23 19:55:10 2020]
+Finished job 13.
+15 of 24 steps (62%) done
+[Fri Oct 23 19:57:25 2020]
+Finished job 22.
+16 of 24 steps (67%) done
+[Fri Oct 23 19:57:28 2020]
+Finished job 24.
+17 of 24 steps (71%) done
+[Fri Oct 23 19:57:30 2020]
+Finished job 14.
+18 of 24 steps (75%) done
+[Fri Oct 23 19:58:55 2020]
+Finished job 15.
+19 of 24 steps (79%) done
+[Fri Oct 23 19:59:47 2020]
+Finished job 17.
+20 of 24 steps (83%) done
+[Fri Oct 23 19:59:51 2020]
+Finished job 19.
+21 of 24 steps (88%) done
+[Fri Oct 23 20:00:20 2020]
+Finished job 18.
+22 of 24 steps (92%) done
+[Fri Oct 23 20:00:32 2020]
+Finished job 21.
+23 of 24 steps (96%) done
+
+[Fri Oct 23 20:00:32 2020]
+localrule all:
+    input: output/SRR934391/RAW/SRR934391_pass_1.fastq.gz, output/SRR764885/RAW/SRR764885_pass_1.fastq.gz, output/SRR446040/RAW/SRR446040_pass_1.fastq.gz, output/SRR446039/RAW/SRR446039_pass_1.fastq.gz, output/SRR446034/RAW/SRR446034_pass_1.fastq.gz, output/SRR446033/RAW/SRR446033_pass_1.fastq.gz, output/SRR446028/RAW/SRR446028_pass_1.fastq.gz, output/SRR446027/RAW/SRR446027_pass_1.fastq.gz, output/SRR1261509/RAW/SRR1261509_pass_1.fastq.gz, output/SRR1105823/RAW/SRR1105823_pass_1.fastq.gz, output/SRR1105822/RAW/SRR1105822_pass_1.fastq.gz, output/SRR1019221/RAW/SRR1019221_pass_1.fastq.gz, output/SRR934391/TRIM/SRR934391_pass_1_val_1.fq.gz, output/SRR764885/TRIM/SRR764885_pass_1_val_1.fq.gz, output/SRR446040/TRIM/SRR446040_pass_1_val_1.fq.gz, output/SRR446039/TRIM/SRR446039_pass_1_val_1.fq.gz, output/SRR446034/TRIM/SRR446034_pass_1_val_1.fq.gz, output/SRR446033/TRIM/SRR446033_pass_1_val_1.fq.gz, output/SRR446028/TRIM/SRR446028_pass_1_val_1.fq.gz, output/SRR446027/TRIM/SRR446027_pass_1_val_1.fq.gz, output/SRR1261509/TRIM/SRR1261509_pass_1_val_1.fq.gz, output/SRR1105823/TRIM/SRR1105823_pass_1_val_1.fq.gz, output/SRR1105822/TRIM/SRR1105822_pass_1_val_1.fq.gz, output/SRR1019221/TRIM/SRR1019221_pass_1_val_1.fq.gz, output/SRR934391/TRIM/SRR934391_pass_2_val_2.fq.gz, output/SRR764885/TRIM/SRR764885_pass_2_val_2.fq.gz, output/SRR446040/TRIM/SRR446040_pass_2_val_2.fq.gz, output/SRR446039/TRIM/SRR446039_pass_2_val_2.fq.gz, output/SRR446034/TRIM/SRR446034_pass_2_val_2.fq.gz, output/SRR446033/TRIM/SRR446033_pass_2_val_2.fq.gz, output/SRR446028/TRIM/SRR446028_pass_2_val_2.fq.gz, output/SRR446027/TRIM/SRR446027_pass_2_val_2.fq.gz, output/SRR1261509/TRIM/SRR1261509_pass_2_val_2.fq.gz, output/SRR1105823/TRIM/SRR1105823_pass_2_val_2.fq.gz, output/SRR1105822/TRIM/SRR1105822_pass_2_val_2.fq.gz, output/SRR1019221/TRIM/SRR1019221_pass_2_val_2.fq.gz
+    jobid: 0
+
+[Fri Oct 23 20:00:32 2020]
+Finished job 0.
+24 of 24 steps (100%) done
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T194556.826318.snakemake.log

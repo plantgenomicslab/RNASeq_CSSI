@@ -1,0 +1,49 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job stats:
+job         count    min threads    max threads
+--------  -------  -------------  -------------
+TPM             1              1              1
+all             1              1              1
+diffexpr        1              1              1
+rundeg          1              1              1
+total           4              1              1
+
+Select jobs to execute...
+
+[Tue Nov 30 23:24:24 2021]
+Job 50: -~- Generating analysis... -~-
+
+run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+Submitted job 50 with external jobid '2946718'.
+
+[Tue Nov 30 23:24:24 2021]
+Job 52: -~- Generating TPM file... -~-
+
+cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python /data/gpfs/assoc/pgl/bin/scripts/tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+Submitted job 52 with external jobid '2946719'.
+[Tue Nov 30 23:24:36 2021]
+Error in rule rundeg:
+    jobid: 50
+    output: output/rundeg_featureCount
+    shell:
+        run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946718
+
+Error executing rule rundeg on cluster (jobid: 50, external: 2946718, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.8172z7n7/snakejob.rundeg.50.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 23:24:38 2021]
+Error in rule TPM:
+    jobid: 52
+    output: output/featureCount.cnt_for_tpm.tpm.tab
+    shell:
+        cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python /data/gpfs/assoc/pgl/bin/scripts/tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946719
+
+Error executing rule TPM on cluster (jobid: 52, external: 2946719, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.8172z7n7/snakejob.TPM.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2021-11-30T232422.481614.snakemake.log

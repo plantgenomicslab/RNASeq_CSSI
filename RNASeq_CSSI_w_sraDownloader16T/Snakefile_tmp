@@ -1,0 +1,17 @@
+import sys
+import os
+import pandas as pd
+SAMPLE_FILE = pd.read_table('data/passes.txt', sep="\s+", dtype=str).set_index("sample", drop=False)  # enforce str in index
+SAMPLE_LIST = SAMPLE_FILE["sample"].values.tolist()
+THREADS = 16
+configfile: "./config.json"
+
+rule all:
+	input:
+		expand("output/{sample}/SRA/{sample}.sra", sample = SAMPLE_LIST)
+
+rule rename:
+	output:
+		"output/{sample}/SRA/{sample}.sra"
+	shell:
+		"mv output/{wildcards.sample}/SRA/{wildcards.sample} {output[0]}"

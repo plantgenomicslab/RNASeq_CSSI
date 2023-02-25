@@ -1,0 +1,329 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	TPM
+	1	all
+	1	diffexpr
+	12	fastqdump
+	12	mapping
+	12	moveSRA
+	1	readscount
+	1	rundeg
+	1	sraDownload
+	12	trimming
+	54
+
+[Tue Nov 30 11:05:55 2021]
+Job 53: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/passes.txt -o output/SRA/
+Submitted job 53 with external jobid '2946397'.
+[Tue Nov 30 11:52:48 2021]
+Finished job 53.
+1 of 54 steps (2%) done
+
+[Tue Nov 30 11:52:48 2021]
+Job 47: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015217 output/SRR4015217/SRA/SRR4015217.sra
+Submitted job 47 with external jobid '2946419'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 46: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015216 output/SRR4015216/SRA/SRR4015216.sra
+Submitted job 46 with external jobid '2946420'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 51: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015218 output/SRR4015218/SRA/SRR4015218.sra
+Submitted job 51 with external jobid '2946421'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 48: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015228 output/SRR4015228/SRA/SRR4015228.sra
+Submitted job 48 with external jobid '2946422'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 50: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015231 output/SRR4015231/SRA/SRR4015231.sra
+Submitted job 50 with external jobid '2946423'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 44: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015225 output/SRR4015225/SRA/SRR4015225.sra
+Submitted job 44 with external jobid '2946424'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 41: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015224 output/SRR4015224/SRA/SRR4015224.sra
+Submitted job 41 with external jobid '2946425'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 43: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR3657709 output/SRR3657709/SRA/SRR3657709.sra
+Submitted job 43 with external jobid '2946426'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 49: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015229 output/SRR4015229/SRA/SRR4015229.sra
+Submitted job 49 with external jobid '2946427'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 45: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015226 output/SRR4015226/SRA/SRR4015226.sra
+Submitted job 45 with external jobid '2946428'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 40: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015222 output/SRR4015222/SRA/SRR4015222.sra
+Submitted job 40 with external jobid '2946429'.
+
+[Tue Nov 30 11:52:48 2021]
+Job 42: ~-~ Moving sra files to respective folders... ~-~
+
+mv output/SRA/SRR4015214 output/SRR4015214/SRA/SRR4015214.sra
+Submitted job 42 with external jobid '2946430'.
+[Tue Nov 30 11:53:00 2021]
+Finished job 47.
+2 of 54 steps (4%) done
+
+[Tue Nov 30 11:53:00 2021]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015217/SRA/SRR4015217.sra --threads 16 -O output/SRR4015217/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 8 with external jobid '2946431'.
+[Tue Nov 30 11:53:02 2021]
+Finished job 46.
+3 of 54 steps (6%) done
+
+[Tue Nov 30 11:53:02 2021]
+Job 7: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015216/SRA/SRR4015216.sra --threads 16 -O output/SRR4015216/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 7 with external jobid '2946432'.
+[Tue Nov 30 11:53:04 2021]
+Finished job 51.
+4 of 54 steps (7%) done
+
+[Tue Nov 30 11:53:04 2021]
+Job 12: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015218/SRA/SRR4015218.sra --threads 16 -O output/SRR4015218/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 12 with external jobid '2946433'.
+[Tue Nov 30 11:53:07 2021]
+Finished job 48.
+5 of 54 steps (9%) done
+
+[Tue Nov 30 11:53:07 2021]
+Job 9: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015228/SRA/SRR4015228.sra --threads 16 -O output/SRR4015228/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 9 with external jobid '2946434'.
+[Tue Nov 30 11:53:09 2021]
+Finished job 50.
+6 of 54 steps (11%) done
+
+[Tue Nov 30 11:53:09 2021]
+Job 11: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015231/SRA/SRR4015231.sra --threads 16 -O output/SRR4015231/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 11 with external jobid '2946435'.
+[Tue Nov 30 11:53:11 2021]
+Finished job 44.
+7 of 54 steps (13%) done
+
+[Tue Nov 30 11:53:11 2021]
+Job 5: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015225/SRA/SRR4015225.sra --threads 16 -O output/SRR4015225/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 5 with external jobid '2946436'.
+[Tue Nov 30 11:53:13 2021]
+Finished job 41.
+8 of 54 steps (15%) done
+
+[Tue Nov 30 11:53:13 2021]
+Job 2: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015224/SRA/SRR4015224.sra --threads 16 -O output/SRR4015224/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 2 with external jobid '2946437'.
+[Tue Nov 30 11:53:15 2021]
+Finished job 43.
+9 of 54 steps (17%) done
+
+[Tue Nov 30 11:53:15 2021]
+Job 4: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR3657709/SRA/SRR3657709.sra --threads 16 -O output/SRR3657709/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 4 with external jobid '2946438'.
+[Tue Nov 30 11:53:17 2021]
+Finished job 49.
+10 of 54 steps (19%) done
+
+[Tue Nov 30 11:53:17 2021]
+Job 10: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015229/SRA/SRR4015229.sra --threads 16 -O output/SRR4015229/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 10 with external jobid '2946439'.
+[Tue Nov 30 11:53:19 2021]
+Finished job 45.
+11 of 54 steps (20%) done
+
+[Tue Nov 30 11:53:19 2021]
+Job 6: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015226/SRA/SRR4015226.sra --threads 16 -O output/SRR4015226/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 6 with external jobid '2946440'.
+[Tue Nov 30 11:53:22 2021]
+Finished job 40.
+12 of 54 steps (22%) done
+
+[Tue Nov 30 11:53:22 2021]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015222/SRA/SRR4015222.sra --threads 16 -O output/SRR4015222/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 1 with external jobid '2946441'.
+[Tue Nov 30 11:53:24 2021]
+Finished job 42.
+13 of 54 steps (24%) done
+
+[Tue Nov 30 11:53:24 2021]
+Job 3: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR4015214/SRA/SRR4015214.sra --threads 16 -O output/SRR4015214/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 3 with external jobid '2946442'.
+[Tue Nov 30 11:53:36 2021]
+Error in rule fastqdump:
+    jobid: 8
+    output: output/SRR4015217/RAW/SRR4015217_pass_1.fastq.gz, output/SRR4015217/RAW/SRR4015217_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015217/SRA/SRR4015217.sra --threads 16 -O output/SRR4015217/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946431
+
+Error executing rule fastqdump on cluster (jobid: 8, external: 2946431, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.8.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:38 2021]
+Error in rule fastqdump:
+    jobid: 7
+    output: output/SRR4015216/RAW/SRR4015216_pass_1.fastq.gz, output/SRR4015216/RAW/SRR4015216_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015216/SRA/SRR4015216.sra --threads 16 -O output/SRR4015216/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946432
+
+Error executing rule fastqdump on cluster (jobid: 7, external: 2946432, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.7.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:40 2021]
+Error in rule fastqdump:
+    jobid: 12
+    output: output/SRR4015218/RAW/SRR4015218_pass_1.fastq.gz, output/SRR4015218/RAW/SRR4015218_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015218/SRA/SRR4015218.sra --threads 16 -O output/SRR4015218/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946433
+
+Error executing rule fastqdump on cluster (jobid: 12, external: 2946433, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.12.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:42 2021]
+Error in rule fastqdump:
+    jobid: 9
+    output: output/SRR4015228/RAW/SRR4015228_pass_1.fastq.gz, output/SRR4015228/RAW/SRR4015228_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015228/SRA/SRR4015228.sra --threads 16 -O output/SRR4015228/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946434
+
+Error executing rule fastqdump on cluster (jobid: 9, external: 2946434, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.9.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:44 2021]
+Error in rule fastqdump:
+    jobid: 11
+    output: output/SRR4015231/RAW/SRR4015231_pass_1.fastq.gz, output/SRR4015231/RAW/SRR4015231_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015231/SRA/SRR4015231.sra --threads 16 -O output/SRR4015231/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946435
+
+Error executing rule fastqdump on cluster (jobid: 11, external: 2946435, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.11.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:46 2021]
+Error in rule fastqdump:
+    jobid: 5
+    output: output/SRR4015225/RAW/SRR4015225_pass_1.fastq.gz, output/SRR4015225/RAW/SRR4015225_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015225/SRA/SRR4015225.sra --threads 16 -O output/SRR4015225/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946436
+
+Error executing rule fastqdump on cluster (jobid: 5, external: 2946436, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.5.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:49 2021]
+Error in rule fastqdump:
+    jobid: 2
+    output: output/SRR4015224/RAW/SRR4015224_pass_1.fastq.gz, output/SRR4015224/RAW/SRR4015224_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015224/SRA/SRR4015224.sra --threads 16 -O output/SRR4015224/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946437
+
+Error executing rule fastqdump on cluster (jobid: 2, external: 2946437, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:51 2021]
+Error in rule fastqdump:
+    jobid: 4
+    output: output/SRR3657709/RAW/SRR3657709_pass_1.fastq.gz, output/SRR3657709/RAW/SRR3657709_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR3657709/SRA/SRR3657709.sra --threads 16 -O output/SRR3657709/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946438
+
+Error executing rule fastqdump on cluster (jobid: 4, external: 2946438, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.4.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:53 2021]
+Error in rule fastqdump:
+    jobid: 10
+    output: output/SRR4015229/RAW/SRR4015229_pass_1.fastq.gz, output/SRR4015229/RAW/SRR4015229_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015229/SRA/SRR4015229.sra --threads 16 -O output/SRR4015229/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946439
+
+Error executing rule fastqdump on cluster (jobid: 10, external: 2946439, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:55 2021]
+Error in rule fastqdump:
+    jobid: 6
+    output: output/SRR4015226/RAW/SRR4015226_pass_1.fastq.gz, output/SRR4015226/RAW/SRR4015226_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015226/SRA/SRR4015226.sra --threads 16 -O output/SRR4015226/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946440
+
+Error executing rule fastqdump on cluster (jobid: 6, external: 2946440, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.6.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:57 2021]
+Error in rule fastqdump:
+    jobid: 1
+    output: output/SRR4015222/RAW/SRR4015222_pass_1.fastq.gz, output/SRR4015222/RAW/SRR4015222_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015222/SRA/SRR4015222.sra --threads 16 -O output/SRR4015222/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946441
+
+Error executing rule fastqdump on cluster (jobid: 1, external: 2946441, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.1.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Tue Nov 30 11:53:59 2021]
+Error in rule fastqdump:
+    jobid: 3
+    output: output/SRR4015214/RAW/SRR4015214_pass_1.fastq.gz, output/SRR4015214/RAW/SRR4015214_pass_2.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR4015214/SRA/SRR4015214.sra --threads 16 -O output/SRR4015214/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2946442
+
+Error executing rule fastqdump on cluster (jobid: 3, external: 2946442, jobscript: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.7b2hh538/snakejob.fastqdump.3.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2021-11-30T110549.267916.snakemake.log

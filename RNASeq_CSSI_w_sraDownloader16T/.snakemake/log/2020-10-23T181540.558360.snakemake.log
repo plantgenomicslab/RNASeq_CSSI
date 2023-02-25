@@ -1,0 +1,2 @@
+SyntaxError in line 10 of /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/Snakefile_tmp:
+Unexpected keyword expand in rule definition (Snakefile_tmp, line 10)

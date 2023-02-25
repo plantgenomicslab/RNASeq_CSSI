@@ -1,0 +1,139 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	rename
+	13
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR1105823/SRA/SRR1105823.sra
+    jobid: 10
+    wildcards: sample=SRR1105823
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 10.
+1 of 13 steps (8%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR1261509/SRA/SRR1261509.sra
+    jobid: 9
+    wildcards: sample=SRR1261509
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 9.
+2 of 13 steps (15%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR934391/SRA/SRR934391.sra
+    jobid: 1
+    wildcards: sample=SRR934391
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 1.
+3 of 13 steps (23%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR1019221/SRA/SRR1019221.sra
+    jobid: 12
+    wildcards: sample=SRR1019221
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 12.
+4 of 13 steps (31%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR446040/SRA/SRR446040.sra
+    jobid: 3
+    wildcards: sample=SRR446040
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 3.
+5 of 13 steps (38%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR1105822/SRA/SRR1105822.sra
+    jobid: 11
+    wildcards: sample=SRR1105822
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 11.
+6 of 13 steps (46%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR446028/SRA/SRR446028.sra
+    jobid: 7
+    wildcards: sample=SRR446028
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 7.
+7 of 13 steps (54%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR446033/SRA/SRR446033.sra
+    jobid: 6
+    wildcards: sample=SRR446033
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 6.
+8 of 13 steps (62%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR446027/SRA/SRR446027.sra
+    jobid: 8
+    wildcards: sample=SRR446027
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 8.
+9 of 13 steps (69%) done
+
+[Sat Oct 24 17:52:06 2020]
+rule rename:
+    output: output/SRR446034/SRA/SRR446034.sra
+    jobid: 5
+    wildcards: sample=SRR446034
+
+[Sat Oct 24 17:52:06 2020]
+Finished job 5.
+10 of 13 steps (77%) done
+
+[Sat Oct 24 17:52:07 2020]
+rule rename:
+    output: output/SRR764885/SRA/SRR764885.sra
+    jobid: 2
+    wildcards: sample=SRR764885
+
+[Sat Oct 24 17:52:07 2020]
+Finished job 2.
+11 of 13 steps (85%) done
+
+[Sat Oct 24 17:52:07 2020]
+rule rename:
+    output: output/SRR446039/SRA/SRR446039.sra
+    jobid: 4
+    wildcards: sample=SRR446039
+
+[Sat Oct 24 17:52:07 2020]
+Finished job 4.
+12 of 13 steps (92%) done
+
+[Sat Oct 24 17:52:07 2020]
+localrule all:
+    input: output/SRR934391/SRA/SRR934391.sra, output/SRR764885/SRA/SRR764885.sra, output/SRR446040/SRA/SRR446040.sra, output/SRR446039/SRA/SRR446039.sra, output/SRR446034/SRA/SRR446034.sra, output/SRR446033/SRA/SRR446033.sra, output/SRR446028/SRA/SRR446028.sra, output/SRR446027/SRA/SRR446027.sra, output/SRR1261509/SRA/SRR1261509.sra, output/SRR1105823/SRA/SRR1105823.sra, output/SRR1105822/SRA/SRR1105822.sra, output/SRR1019221/SRA/SRR1019221.sra
+    jobid: 0
+
+[Sat Oct 24 17:52:07 2020]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-24T175205.984654.snakemake.log

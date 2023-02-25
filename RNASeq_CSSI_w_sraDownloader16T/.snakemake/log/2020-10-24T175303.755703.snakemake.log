@@ -1,0 +1,359 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	TPM
+	1	all
+	1	diffexpr
+	12	fastqdump
+	12	mapping
+	1	readscount
+	1	rundeg
+	12	trimming
+	41
+
+[Sat Oct 24 17:53:05 2020]
+Job 9: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1261509/SRA/SRR1261509.sra --threads 16 -O output/SRR1261509/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 9 with external jobid '2548137'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 10: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105823/SRA/SRR1105823.sra --threads 16 -O output/SRR1105823/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 10 with external jobid '2548138'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 7: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446028/SRA/SRR446028.sra --threads 16 -O output/SRR446028/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 7 with external jobid '2548139'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 1: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR934391/SRA/SRR934391.sra --threads 16 -O output/SRR934391/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 1 with external jobid '2548140'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 8: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446027/SRA/SRR446027.sra --threads 16 -O output/SRR446027/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 8 with external jobid '2548141'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 5: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446034/SRA/SRR446034.sra --threads 16 -O output/SRR446034/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 5 with external jobid '2548142'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 2: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR764885/SRA/SRR764885.sra --threads 16 -O output/SRR764885/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 2 with external jobid '2548143'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 6: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446033/SRA/SRR446033.sra --threads 16 -O output/SRR446033/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 6 with external jobid '2548144'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 12: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1019221/SRA/SRR1019221.sra --threads 16 -O output/SRR1019221/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 12 with external jobid '2548145'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 3: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446040/SRA/SRR446040.sra --threads 16 -O output/SRR446040/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 3 with external jobid '2548146'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 11: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1105822/SRA/SRR1105822.sra --threads 16 -O output/SRR1105822/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 11 with external jobid '2548147'.
+
+[Sat Oct 24 17:53:05 2020]
+Job 4: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446039/SRA/SRR446039.sra --threads 16 -O output/SRR446039/RAW/ --split-files --gzip --skip-technical  --readids --read-filter pass --dumpbase
+Submitted job 4 with external jobid '2548148'.
+[Sat Oct 24 17:54:53 2020]
+Finished job 4.
+1 of 41 steps (2%) done
+
+[Sat Oct 24 17:54:53 2020]
+Job 16: -~- Trimming fastq files... -~-
+
+Submitted job 16 with external jobid '2548149'.
+[Sat Oct 24 17:55:14 2020]
+Finished job 8.
+2 of 41 steps (5%) done
+
+[Sat Oct 24 17:55:14 2020]
+Job 20: -~- Trimming fastq files... -~-
+
+Submitted job 20 with external jobid '2548150'.
+[Sat Oct 24 17:55:27 2020]
+Finished job 11.
+3 of 41 steps (7%) done
+
+[Sat Oct 24 17:55:27 2020]
+Job 23: -~- Trimming fastq files... -~-
+
+Submitted job 23 with external jobid '2548151'.
+[Sat Oct 24 17:55:52 2020]
+Finished job 1.
+4 of 41 steps (10%) done
+
+[Sat Oct 24 17:55:52 2020]
+Job 13: -~- Trimming fastq files... -~-
+
+Submitted job 13 with external jobid '2548152'.
+[Sat Oct 24 17:56:24 2020]
+Finished job 9.
+5 of 41 steps (12%) done
+
+[Sat Oct 24 17:56:24 2020]
+Job 21: -~- Trimming fastq files... -~-
+
+Submitted job 21 with external jobid '2548153'.
+[Sat Oct 24 17:56:26 2020]
+Finished job 10.
+6 of 41 steps (15%) done
+
+[Sat Oct 24 17:56:26 2020]
+Job 22: -~- Trimming fastq files... -~-
+
+Submitted job 22 with external jobid '2548154'.
+[Sat Oct 24 17:56:33 2020]
+Finished job 2.
+7 of 41 steps (17%) done
+
+[Sat Oct 24 17:56:33 2020]
+Job 14: -~- Trimming fastq files... -~-
+
+Submitted job 14 with external jobid '2548155'.
+[Sat Oct 24 17:56:37 2020]
+Finished job 12.
+8 of 41 steps (20%) done
+
+[Sat Oct 24 17:56:37 2020]
+Job 24: -~- Trimming fastq files... -~-
+
+Submitted job 24 with external jobid '2548156'.
+[Sat Oct 24 17:57:09 2020]
+Finished job 7.
+9 of 41 steps (22%) done
+
+[Sat Oct 24 17:57:09 2020]
+Job 19: -~- Trimming fastq files... -~-
+
+Submitted job 19 with external jobid '2548157'.
+[Sat Oct 24 17:57:11 2020]
+Finished job 5.
+10 of 41 steps (24%) done
+
+[Sat Oct 24 17:57:11 2020]
+Job 17: -~- Trimming fastq files... -~-
+
+Submitted job 17 with external jobid '2548158'.
+[Sat Oct 24 17:57:13 2020]
+Finished job 6.
+11 of 41 steps (27%) done
+
+[Sat Oct 24 17:57:13 2020]
+Job 18: -~- Trimming fastq files... -~-
+
+Submitted job 18 with external jobid '2548159'.
+[Sat Oct 24 17:57:51 2020]
+Finished job 3.
+12 of 41 steps (29%) done
+
+[Sat Oct 24 17:57:51 2020]
+Job 15: -~- Trimming fastq files... -~-
+
+Submitted job 15 with external jobid '2548160'.
+[Sat Oct 24 17:59:42 2020]
+Finished job 16.
+13 of 41 steps (32%) done
+
+[Sat Oct 24 17:59:42 2020]
+Job 28: -~- Mapping... -~-
+
+Submitted job 28 with external jobid '2548161'.
+[Sat Oct 24 18:00:14 2020]
+Finished job 20.
+14 of 41 steps (34%) done
+
+[Sat Oct 24 18:00:14 2020]
+Job 32: -~- Mapping... -~-
+
+Submitted job 32 with external jobid '2548162'.
+[Sat Oct 24 18:01:28 2020]
+Finished job 23.
+15 of 41 steps (37%) done
+
+[Sat Oct 24 18:01:28 2020]
+Job 35: -~- Mapping... -~-
+
+Submitted job 35 with external jobid '2548163'.
+[Sat Oct 24 18:01:30 2020]
+Finished job 28.
+16 of 41 steps (39%) done
+[Sat Oct 24 18:02:04 2020]
+Finished job 13.
+17 of 41 steps (41%) done
+
+[Sat Oct 24 18:02:04 2020]
+Job 25: -~- Mapping... -~-
+
+Submitted job 25 with external jobid '2548164'.
+[Sat Oct 24 18:02:19 2020]
+Finished job 32.
+18 of 41 steps (44%) done
+[Sat Oct 24 18:03:54 2020]
+Finished job 35.
+19 of 41 steps (46%) done
+[Sat Oct 24 18:04:34 2020]
+Finished job 21.
+20 of 41 steps (49%) done
+
+[Sat Oct 24 18:04:34 2020]
+Job 33: -~- Mapping... -~-
+
+Submitted job 33 with external jobid '2548165'.
+[Sat Oct 24 18:04:37 2020]
+Finished job 22.
+21 of 41 steps (51%) done
+
+[Sat Oct 24 18:04:37 2020]
+Job 34: -~- Mapping... -~-
+
+Submitted job 34 with external jobid '2548166'.
+[Sat Oct 24 18:04:39 2020]
+Finished job 14.
+22 of 41 steps (54%) done
+
+[Sat Oct 24 18:04:39 2020]
+Job 26: -~- Mapping... -~-
+
+Submitted job 26 with external jobid '2548167'.
+[Sat Oct 24 18:04:41 2020]
+Finished job 24.
+23 of 41 steps (56%) done
+
+[Sat Oct 24 18:04:41 2020]
+Job 36: -~- Mapping... -~-
+
+Submitted job 36 with external jobid '2548168'.
+[Sat Oct 24 18:04:43 2020]
+Finished job 25.
+24 of 41 steps (59%) done
+[Sat Oct 24 18:06:01 2020]
+Finished job 19.
+25 of 41 steps (61%) done
+
+[Sat Oct 24 18:06:01 2020]
+Job 31: -~- Mapping... -~-
+
+Submitted job 31 with external jobid '2548169'.
+[Sat Oct 24 18:06:58 2020]
+Finished job 17.
+26 of 41 steps (63%) done
+
+[Sat Oct 24 18:06:58 2020]
+Job 29: -~- Mapping... -~-
+
+Submitted job 29 with external jobid '2548170'.
+[Sat Oct 24 18:07:00 2020]
+Finished job 18.
+27 of 41 steps (66%) done
+
+[Sat Oct 24 18:07:00 2020]
+Job 30: -~- Mapping... -~-
+
+Submitted job 30 with external jobid '2548171'.
+[Sat Oct 24 18:07:46 2020]
+Finished job 34.
+28 of 41 steps (68%) done
+[Sat Oct 24 18:08:12 2020]
+Finished job 33.
+29 of 41 steps (71%) done
+[Sat Oct 24 18:08:14 2020]
+Finished job 26.
+30 of 41 steps (73%) done
+[Sat Oct 24 18:08:16 2020]
+Finished job 36.
+31 of 41 steps (76%) done
+[Sat Oct 24 18:09:14 2020]
+Finished job 15.
+32 of 41 steps (78%) done
+
+[Sat Oct 24 18:09:14 2020]
+Job 27: -~- Mapping... -~-
+
+Submitted job 27 with external jobid '2548172'.
+[Sat Oct 24 18:09:52 2020]
+Finished job 31.
+33 of 41 steps (80%) done
+[Sat Oct 24 18:11:00 2020]
+Finished job 30.
+34 of 41 steps (83%) done
+[Sat Oct 24 18:11:29 2020]
+Finished job 29.
+35 of 41 steps (85%) done
+[Sat Oct 24 18:14:07 2020]
+Finished job 27.
+36 of 41 steps (88%) done
+
+[Sat Oct 24 18:14:07 2020]
+Job 52: -~- Generating feature counts... -~-
+
+featureCounts -p -Q 10 -M --fraction -s 0 -T 16 -o output/featureCount.cnt  -a ./ref/TAIR10.gtf output/SRR934391/SRR934391Aligned.sortedByCoord.out.bam output/SRR764885/SRR764885Aligned.sortedByCoord.out.bam output/SRR446040/SRR446040Aligned.sortedByCoord.out.bam output/SRR446039/SRR446039Aligned.sortedByCoord.out.bam output/SRR446034/SRR446034Aligned.sortedByCoord.out.bam output/SRR446033/SRR446033Aligned.sortedByCoord.out.bam output/SRR446028/SRR446028Aligned.sortedByCoord.out.bam output/SRR446027/SRR446027Aligned.sortedByCoord.out.bam output/SRR1261509/SRR1261509Aligned.sortedByCoord.out.bam output/SRR1105823/SRR1105823Aligned.sortedByCoord.out.bam output/SRR1105822/SRR1105822Aligned.sortedByCoord.out.bam output/SRR1019221/SRR1019221Aligned.sortedByCoord.out.bam; python src/fix_featCnt_header.py output/featureCount.cnt
+Submitted job 52 with external jobid '2548173'.
+[Sat Oct 24 18:15:57 2020]
+Finished job 52.
+37 of 41 steps (90%) done
+
+[Sat Oct 24 18:15:57 2020]
+Job 38: -~- Generating TPM file... -~-
+
+cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+Submitted job 38 with external jobid '2548174'.
+
+[Sat Oct 24 18:15:57 2020]
+Job 37: -~- Generating analysis... -~-
+
+run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+Submitted job 37 with external jobid '2548175'.
+[Sat Oct 24 18:16:09 2020]
+Error in rule TPM:
+    jobid: 38
+    output: output/featureCount.cnt_for_tpm.tpm.tab
+    shell:
+        cut -f 1,6- output/featureCount.cnt.fixed | egrep -v '#' >> output/featureCount.cnt_for_tpm; python tpm_raw_exp_calculator.py -count output/featureCount.cnt_for_tpm
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2548174
+
+Error executing rule TPM on cluster (jobid: 38, external: 2548174, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.h2ywared/snakejob.TPM.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Sat Oct 24 18:16:11 2020]
+Error in rule rundeg:
+    jobid: 37
+    output: output/rundeg_featureCount
+    shell:
+        run_DE_analysis.pl -m output/featureCount.cnt.fixed --method DESeq2 --samples_file ./samplefile --output output/rundeg_featureCount --contrasts ./contrasts
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2548175
+
+Error executing rule rundeg on cluster (jobid: 37, external: 2548175, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.h2ywared/snakejob.rundeg.37.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-24T175303.755703.snakemake.log

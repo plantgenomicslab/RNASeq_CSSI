@@ -1,0 +1,811 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	112	fastqdump
+	113
+
+[Fri Oct 23 18:25:26 2020]
+Job 62: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR504180/SRA/SRR504180.sra --threads 16 -O output/SRR504180/RAW/ --split-files --gzip
+Submitted job 62 with external jobid '2547789'.
+
+[Fri Oct 23 18:25:26 2020]
+Job 80: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653564/SRA/SRR653564.sra --threads 16 -O output/SRR653564/RAW/ --split-files --gzip
+Submitted job 80 with external jobid '2547790'.
+
+[Fri Oct 23 18:25:26 2020]
+Job 18: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1207194/SRA/SRR1207194.sra --threads 16 -O output/SRR1207194/RAW/ --split-files --gzip
+Submitted job 18 with external jobid '2547791'.
+
+[Fri Oct 23 18:25:26 2020]
+Job 51: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446486/SRA/SRR446486.sra --threads 16 -O output/SRR446486/RAW/ --split-files --gzip
+Submitted job 51 with external jobid '2547792'.
+
+[Fri Oct 23 18:25:26 2020]
+Job 106: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847506/SRA/SRR847506.sra --threads 16 -O output/SRR847506/RAW/ --split-files --gzip
+Submitted job 106 with external jobid '2547793'.
+
+[Fri Oct 23 18:25:26 2020]
+Job 113: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR949989/SRA/SRR949989.sra --threads 16 -O output/SRR949989/RAW/ --split-files --gzip
+Submitted job 113 with external jobid '2547794'.
+
+[Fri Oct 23 18:25:26 2020]
+Job 30: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR345562/SRA/SRR345562.sra --threads 16 -O output/SRR345562/RAW/ --split-files --gzip
+Submitted job 30 with external jobid '2547795'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 90: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653574/SRA/SRR653574.sra --threads 16 -O output/SRR653574/RAW/ --split-files --gzip
+Submitted job 90 with external jobid '2547796'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 15: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1159821/SRA/SRR1159821.sra --threads 16 -O output/SRR1159821/RAW/ --split-files --gzip
+Submitted job 15 with external jobid '2547797'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 33: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR394082/SRA/SRR394082.sra --threads 16 -O output/SRR394082/RAW/ --split-files --gzip
+Submitted job 33 with external jobid '2547798'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 53: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR477075/SRA/SRR477075.sra --threads 16 -O output/SRR477075/RAW/ --split-files --gzip
+Submitted job 53 with external jobid '2547799'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 42: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401421/SRA/SRR401421.sra --threads 16 -O output/SRR401421/RAW/ --split-files --gzip
+Submitted job 42 with external jobid '2547800'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 109: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR942022/SRA/SRR942022.sra --threads 16 -O output/SRR942022/RAW/ --split-files --gzip
+Submitted job 109 with external jobid '2547801'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 107: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR924656/SRA/SRR924656.sra --threads 16 -O output/SRR924656/RAW/ --split-files --gzip
+Submitted job 107 with external jobid '2547802'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 26: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR314813/SRA/SRR314813.sra --threads 16 -O output/SRR314813/RAW/ --split-files --gzip
+Submitted job 26 with external jobid '2547803'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 21: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1260033/SRA/SRR1260033.sra --threads 16 -O output/SRR1260033/RAW/ --split-files --gzip
+Submitted job 21 with external jobid '2547804'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 27: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR314814/SRA/SRR314814.sra --threads 16 -O output/SRR314814/RAW/ --split-files --gzip
+Submitted job 27 with external jobid '2547805'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 110: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR949956/SRA/SRR949956.sra --threads 16 -O output/SRR949956/RAW/ --split-files --gzip
+Submitted job 110 with external jobid '2547806'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 61: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR504179/SRA/SRR504179.sra --threads 16 -O output/SRR504179/RAW/ --split-files --gzip
+Submitted job 61 with external jobid '2547807'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 79: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653563/SRA/SRR653563.sra --threads 16 -O output/SRR653563/RAW/ --split-files --gzip
+Submitted job 79 with external jobid '2547808'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 76: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653557/SRA/SRR653557.sra --threads 16 -O output/SRR653557/RAW/ --split-files --gzip
+Submitted job 76 with external jobid '2547809'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 52: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446487/SRA/SRR446487.sra --threads 16 -O output/SRR446487/RAW/ --split-files --gzip
+Submitted job 52 with external jobid '2547810'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 94: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653578/SRA/SRR653578.sra --threads 16 -O output/SRR653578/RAW/ --split-files --gzip
+Submitted job 94 with external jobid '2547811'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 38: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401417/SRA/SRR401417.sra --threads 16 -O output/SRR401417/RAW/ --split-files --gzip
+Submitted job 38 with external jobid '2547812'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 43: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446027/SRA/SRR446027.sra --threads 16 -O output/SRR446027/RAW/ --split-files --gzip
+Submitted job 43 with external jobid '2547813'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 47: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR446039/SRA/SRR446039.sra --threads 16 -O output/SRR446039/RAW/ --split-files --gzip
+Submitted job 47 with external jobid '2547814'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 39: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401418/SRA/SRR401418.sra --threads 16 -O output/SRR401418/RAW/ --split-files --gzip
+Submitted job 39 with external jobid '2547815'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 2: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/ERR274310/SRA/ERR274310.sra --threads 16 -O output/ERR274310/RAW/ --split-files --gzip
+Submitted job 2 with external jobid '2547816'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 108: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR934391/SRA/SRR934391.sra --threads 16 -O output/SRR934391/RAW/ --split-files --gzip
+Submitted job 108 with external jobid '2547817'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 82: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653566/SRA/SRR653566.sra --threads 16 -O output/SRR653566/RAW/ --split-files --gzip
+Submitted job 82 with external jobid '2547818'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 10: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1046909/SRA/SRR1046909.sra --threads 16 -O output/SRR1046909/RAW/ --split-files --gzip
+Submitted job 10 with external jobid '2547819'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 101: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847501/SRA/SRR847501.sra --threads 16 -O output/SRR847501/RAW/ --split-files --gzip
+Submitted job 101 with external jobid '2547820'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 19: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1207195/SRA/SRR1207195.sra --threads 16 -O output/SRR1207195/RAW/ --split-files --gzip
+Submitted job 19 with external jobid '2547821'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 35: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401414/SRA/SRR401414.sra --threads 16 -O output/SRR401414/RAW/ --split-files --gzip
+Submitted job 35 with external jobid '2547822'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 112: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR949988/SRA/SRR949988.sra --threads 16 -O output/SRR949988/RAW/ --split-files --gzip
+Submitted job 112 with external jobid '2547823'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 84: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653568/SRA/SRR653568.sra --threads 16 -O output/SRR653568/RAW/ --split-files --gzip
+Submitted job 84 with external jobid '2547824'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 87: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653571/SRA/SRR653571.sra --threads 16 -O output/SRR653571/RAW/ --split-files --gzip
+Submitted job 87 with external jobid '2547825'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 41: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR401420/SRA/SRR401420.sra --threads 16 -O output/SRR401420/RAW/ --split-files --gzip
+Submitted job 41 with external jobid '2547826'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 83: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653567/SRA/SRR653567.sra --threads 16 -O output/SRR653567/RAW/ --split-files --gzip
+Submitted job 83 with external jobid '2547827'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 85: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653569/SRA/SRR653569.sra --threads 16 -O output/SRR653569/RAW/ --split-files --gzip
+Submitted job 85 with external jobid '2547828'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 78: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653562/SRA/SRR653562.sra --threads 16 -O output/SRR653562/RAW/ --split-files --gzip
+Submitted job 78 with external jobid '2547829'.
+
+[Fri Oct 23 18:25:27 2020]
+Job 54: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR477076/SRA/SRR477076.sra --threads 16 -O output/SRR477076/RAW/ --split-files --gzip
+Submitted job 54 with external jobid '2547830'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 77: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR653561/SRA/SRR653561.sra --threads 16 -O output/SRR653561/RAW/ --split-files --gzip
+Submitted job 77 with external jobid '2547831'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 105: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR847505/SRA/SRR847505.sra --threads 16 -O output/SRR847505/RAW/ --split-files --gzip
+Submitted job 105 with external jobid '2547832'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 23: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR1524935/SRA/SRR1524935.sra --threads 16 -O output/SRR1524935/RAW/ --split-files --gzip
+Submitted job 23 with external jobid '2547833'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 69: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR548277/SRA/SRR548277.sra --threads 16 -O output/SRR548277/RAW/ --split-files --gzip
+Submitted job 69 with external jobid '2547834'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 66: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR527164/SRA/SRR527164.sra --threads 16 -O output/SRR527164/RAW/ --split-files --gzip
+Submitted job 66 with external jobid '2547835'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 68: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR547531/SRA/SRR547531.sra --threads 16 -O output/SRR547531/RAW/ --split-files --gzip
+Submitted job 68 with external jobid '2547836'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 59: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR493237/SRA/SRR493237.sra --threads 16 -O output/SRR493237/RAW/ --split-files --gzip
+Submitted job 59 with external jobid '2547837'.
+
+[Fri Oct 23 18:25:28 2020]
+Job 97: -~- Converting sra to fastq files... -~-
+
+parallel-fastq-dump --sra-id output/SRR797230/SRA/SRR797230.sra --threads 16 -O output/SRR797230/RAW/ --split-files --gzip
+Submitted job 97 with external jobid '2547838'.
+[Fri Oct 23 18:33:44 2020]
+Error in rule fastqdump:
+    jobid: 113
+    output: output/SRR949989/RAW/SRR949989_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR949989/SRA/SRR949989.sra --threads 16 -O output/SRR949989/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547794
+
+Error executing rule fastqdump on cluster (jobid: 113, external: 2547794, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.113.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:33:46 2020]
+Error in rule fastqdump:
+    jobid: 30
+    output: output/SRR345562/RAW/SRR345562_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR345562/SRA/SRR345562.sra --threads 16 -O output/SRR345562/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547795
+
+Error executing rule fastqdump on cluster (jobid: 30, external: 2547795, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.30.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:33:48 2020]
+Error in rule fastqdump:
+    jobid: 90
+    output: output/SRR653574/RAW/SRR653574_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653574/SRA/SRR653574.sra --threads 16 -O output/SRR653574/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547796
+
+Error executing rule fastqdump on cluster (jobid: 90, external: 2547796, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.90.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:33:51 2020]
+Error in rule fastqdump:
+    jobid: 15
+    output: output/SRR1159821/RAW/SRR1159821_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR1159821/SRA/SRR1159821.sra --threads 16 -O output/SRR1159821/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547797
+
+Error executing rule fastqdump on cluster (jobid: 15, external: 2547797, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.15.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:32 2020]
+Error in rule fastqdump:
+    jobid: 62
+    output: output/SRR504180/RAW/SRR504180_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR504180/SRA/SRR504180.sra --threads 16 -O output/SRR504180/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547789
+
+Error executing rule fastqdump on cluster (jobid: 62, external: 2547789, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.62.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:34 2020]
+Error in rule fastqdump:
+    jobid: 80
+    output: output/SRR653564/RAW/SRR653564_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653564/SRA/SRR653564.sra --threads 16 -O output/SRR653564/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547790
+
+Error executing rule fastqdump on cluster (jobid: 80, external: 2547790, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.80.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:36 2020]
+Error in rule fastqdump:
+    jobid: 18
+    output: output/SRR1207194/RAW/SRR1207194_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR1207194/SRA/SRR1207194.sra --threads 16 -O output/SRR1207194/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547791
+
+Error executing rule fastqdump on cluster (jobid: 18, external: 2547791, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.18.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:38 2020]
+Error in rule fastqdump:
+    jobid: 51
+    output: output/SRR446486/RAW/SRR446486_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR446486/SRA/SRR446486.sra --threads 16 -O output/SRR446486/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547792
+
+Error executing rule fastqdump on cluster (jobid: 51, external: 2547792, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.51.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:41 2020]
+Error in rule fastqdump:
+    jobid: 106
+    output: output/SRR847506/RAW/SRR847506_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR847506/SRA/SRR847506.sra --threads 16 -O output/SRR847506/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547793
+
+Error executing rule fastqdump on cluster (jobid: 106, external: 2547793, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.106.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:43 2020]
+Error in rule fastqdump:
+    jobid: 33
+    output: output/SRR394082/RAW/SRR394082_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR394082/SRA/SRR394082.sra --threads 16 -O output/SRR394082/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547798
+
+Error executing rule fastqdump on cluster (jobid: 33, external: 2547798, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.33.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:35:45 2020]
+Error in rule fastqdump:
+    jobid: 53
+    output: output/SRR477075/RAW/SRR477075_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR477075/SRA/SRR477075.sra --threads 16 -O output/SRR477075/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547799
+
+Error executing rule fastqdump on cluster (jobid: 53, external: 2547799, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.53.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:42:06 2020]
+Error in rule fastqdump:
+    jobid: 42
+    output: output/SRR401421/RAW/SRR401421_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR401421/SRA/SRR401421.sra --threads 16 -O output/SRR401421/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547800
+
+Error executing rule fastqdump on cluster (jobid: 42, external: 2547800, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.42.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:42:08 2020]
+Error in rule fastqdump:
+    jobid: 109
+    output: output/SRR942022/RAW/SRR942022_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR942022/SRA/SRR942022.sra --threads 16 -O output/SRR942022/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547801
+
+Error executing rule fastqdump on cluster (jobid: 109, external: 2547801, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.109.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:42:19 2020]
+Error in rule fastqdump:
+    jobid: 110
+    output: output/SRR949956/RAW/SRR949956_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR949956/SRA/SRR949956.sra --threads 16 -O output/SRR949956/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547806
+
+Error executing rule fastqdump on cluster (jobid: 110, external: 2547806, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.110.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:41 2020]
+Error in rule fastqdump:
+    jobid: 107
+    output: output/SRR924656/RAW/SRR924656_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR924656/SRA/SRR924656.sra --threads 16 -O output/SRR924656/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547802
+
+Error executing rule fastqdump on cluster (jobid: 107, external: 2547802, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.107.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:43 2020]
+Error in rule fastqdump:
+    jobid: 26
+    output: output/SRR314813/RAW/SRR314813_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR314813/SRA/SRR314813.sra --threads 16 -O output/SRR314813/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547803
+
+Error executing rule fastqdump on cluster (jobid: 26, external: 2547803, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.26.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:45 2020]
+Error in rule fastqdump:
+    jobid: 21
+    output: output/SRR1260033/RAW/SRR1260033_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR1260033/SRA/SRR1260033.sra --threads 16 -O output/SRR1260033/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547804
+
+Error executing rule fastqdump on cluster (jobid: 21, external: 2547804, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.21.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:47 2020]
+Error in rule fastqdump:
+    jobid: 27
+    output: output/SRR314814/RAW/SRR314814_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR314814/SRA/SRR314814.sra --threads 16 -O output/SRR314814/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547805
+
+Error executing rule fastqdump on cluster (jobid: 27, external: 2547805, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.27.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:50 2020]
+Error in rule fastqdump:
+    jobid: 61
+    output: output/SRR504179/RAW/SRR504179_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR504179/SRA/SRR504179.sra --threads 16 -O output/SRR504179/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547807
+
+Error executing rule fastqdump on cluster (jobid: 61, external: 2547807, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.61.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:52 2020]
+Error in rule fastqdump:
+    jobid: 79
+    output: output/SRR653563/RAW/SRR653563_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653563/SRA/SRR653563.sra --threads 16 -O output/SRR653563/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547808
+
+Error executing rule fastqdump on cluster (jobid: 79, external: 2547808, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.79.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:43:54 2020]
+Error in rule fastqdump:
+    jobid: 76
+    output: output/SRR653557/RAW/SRR653557_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653557/SRA/SRR653557.sra --threads 16 -O output/SRR653557/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547809
+
+Error executing rule fastqdump on cluster (jobid: 76, external: 2547809, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.76.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:45:09 2020]
+Error in rule fastqdump:
+    jobid: 52
+    output: output/SRR446487/RAW/SRR446487_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR446487/SRA/SRR446487.sra --threads 16 -O output/SRR446487/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547810
+
+Error executing rule fastqdump on cluster (jobid: 52, external: 2547810, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.52.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:49:54 2020]
+Error in rule fastqdump:
+    jobid: 94
+    output: output/SRR653578/RAW/SRR653578_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653578/SRA/SRR653578.sra --threads 16 -O output/SRR653578/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547811
+
+Error executing rule fastqdump on cluster (jobid: 94, external: 2547811, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.94.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:49:56 2020]
+Error in rule fastqdump:
+    jobid: 38
+    output: output/SRR401417/RAW/SRR401417_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR401417/SRA/SRR401417.sra --threads 16 -O output/SRR401417/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547812
+
+Error executing rule fastqdump on cluster (jobid: 38, external: 2547812, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.38.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:51:05 2020]
+Error in rule fastqdump:
+    jobid: 43
+    output: output/SRR446027/RAW/SRR446027_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR446027/SRA/SRR446027.sra --threads 16 -O output/SRR446027/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547813
+
+Error executing rule fastqdump on cluster (jobid: 43, external: 2547813, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.43.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:51:16 2020]
+Error in rule fastqdump:
+    jobid: 82
+    output: output/SRR653566/RAW/SRR653566_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653566/SRA/SRR653566.sra --threads 16 -O output/SRR653566/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547818
+
+Error executing rule fastqdump on cluster (jobid: 82, external: 2547818, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.82.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:51:18 2020]
+Error in rule fastqdump:
+    jobid: 10
+    output: output/SRR1046909/RAW/SRR1046909_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR1046909/SRA/SRR1046909.sra --threads 16 -O output/SRR1046909/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547819
+
+Error executing rule fastqdump on cluster (jobid: 10, external: 2547819, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.10.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:52:12 2020]
+Error in rule fastqdump:
+    jobid: 47
+    output: output/SRR446039/RAW/SRR446039_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR446039/SRA/SRR446039.sra --threads 16 -O output/SRR446039/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547814
+
+Error executing rule fastqdump on cluster (jobid: 47, external: 2547814, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.47.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:52:14 2020]
+Error in rule fastqdump:
+    jobid: 39
+    output: output/SRR401418/RAW/SRR401418_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR401418/SRA/SRR401418.sra --threads 16 -O output/SRR401418/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547815
+
+Error executing rule fastqdump on cluster (jobid: 39, external: 2547815, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.39.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:52:16 2020]
+Error in rule fastqdump:
+    jobid: 2
+    output: output/ERR274310/RAW/ERR274310_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/ERR274310/SRA/ERR274310.sra --threads 16 -O output/ERR274310/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547816
+
+Error executing rule fastqdump on cluster (jobid: 2, external: 2547816, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.2.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:52:20 2020]
+Error in rule fastqdump:
+    jobid: 101
+    output: output/SRR847501/RAW/SRR847501_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR847501/SRA/SRR847501.sra --threads 16 -O output/SRR847501/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547820
+
+Error executing rule fastqdump on cluster (jobid: 101, external: 2547820, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.101.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:53:11 2020]
+Error in rule fastqdump:
+    jobid: 108
+    output: output/SRR934391/RAW/SRR934391_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR934391/SRA/SRR934391.sra --threads 16 -O output/SRR934391/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547817
+
+Error executing rule fastqdump on cluster (jobid: 108, external: 2547817, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.108.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:53:13 2020]
+Error in rule fastqdump:
+    jobid: 19
+    output: output/SRR1207195/RAW/SRR1207195_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR1207195/SRA/SRR1207195.sra --threads 16 -O output/SRR1207195/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547821
+
+Error executing rule fastqdump on cluster (jobid: 19, external: 2547821, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.19.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:57:57 2020]
+Error in rule fastqdump:
+    jobid: 35
+    output: output/SRR401414/RAW/SRR401414_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR401414/SRA/SRR401414.sra --threads 16 -O output/SRR401414/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547822
+
+Error executing rule fastqdump on cluster (jobid: 35, external: 2547822, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.35.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:57:59 2020]
+Error in rule fastqdump:
+    jobid: 112
+    output: output/SRR949988/RAW/SRR949988_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR949988/SRA/SRR949988.sra --threads 16 -O output/SRR949988/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547823
+
+Error executing rule fastqdump on cluster (jobid: 112, external: 2547823, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.112.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:58:44 2020]
+Error in rule fastqdump:
+    jobid: 84
+    output: output/SRR653568/RAW/SRR653568_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653568/SRA/SRR653568.sra --threads 16 -O output/SRR653568/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547824
+
+Error executing rule fastqdump on cluster (jobid: 84, external: 2547824, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.84.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:59:27 2020]
+Error in rule fastqdump:
+    jobid: 87
+    output: output/SRR653571/RAW/SRR653571_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653571/SRA/SRR653571.sra --threads 16 -O output/SRR653571/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547825
+
+Error executing rule fastqdump on cluster (jobid: 87, external: 2547825, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.87.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:59:29 2020]
+Error in rule fastqdump:
+    jobid: 41
+    output: output/SRR401420/RAW/SRR401420_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR401420/SRA/SRR401420.sra --threads 16 -O output/SRR401420/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547826
+
+Error executing rule fastqdump on cluster (jobid: 41, external: 2547826, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.41.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 18:59:31 2020]
+Error in rule fastqdump:
+    jobid: 83
+    output: output/SRR653567/RAW/SRR653567_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653567/SRA/SRR653567.sra --threads 16 -O output/SRR653567/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547827
+
+Error executing rule fastqdump on cluster (jobid: 83, external: 2547827, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.83.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:00:07 2020]
+Error in rule fastqdump:
+    jobid: 85
+    output: output/SRR653569/RAW/SRR653569_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653569/SRA/SRR653569.sra --threads 16 -O output/SRR653569/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547828
+
+Error executing rule fastqdump on cluster (jobid: 85, external: 2547828, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.85.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:00:09 2020]
+Error in rule fastqdump:
+    jobid: 78
+    output: output/SRR653562/RAW/SRR653562_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653562/SRA/SRR653562.sra --threads 16 -O output/SRR653562/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547829
+
+Error executing rule fastqdump on cluster (jobid: 78, external: 2547829, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.78.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:00:11 2020]
+Error in rule fastqdump:
+    jobid: 54
+    output: output/SRR477076/RAW/SRR477076_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR477076/SRA/SRR477076.sra --threads 16 -O output/SRR477076/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547830
+
+Error executing rule fastqdump on cluster (jobid: 54, external: 2547830, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.54.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:00:41 2020]
+Error in rule fastqdump:
+    jobid: 77
+    output: output/SRR653561/RAW/SRR653561_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR653561/SRA/SRR653561.sra --threads 16 -O output/SRR653561/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547831
+
+Error executing rule fastqdump on cluster (jobid: 77, external: 2547831, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.77.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:01:33 2020]
+Error in rule fastqdump:
+    jobid: 105
+    output: output/SRR847505/RAW/SRR847505_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR847505/SRA/SRR847505.sra --threads 16 -O output/SRR847505/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547832
+
+Error executing rule fastqdump on cluster (jobid: 105, external: 2547832, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.105.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:06:14 2020]
+Error in rule fastqdump:
+    jobid: 69
+    output: output/SRR548277/RAW/SRR548277_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR548277/SRA/SRR548277.sra --threads 16 -O output/SRR548277/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547834
+
+Error executing rule fastqdump on cluster (jobid: 69, external: 2547834, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.69.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:06:35 2020]
+Error in rule fastqdump:
+    jobid: 23
+    output: output/SRR1524935/RAW/SRR1524935_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR1524935/SRA/SRR1524935.sra --threads 16 -O output/SRR1524935/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547833
+
+Error executing rule fastqdump on cluster (jobid: 23, external: 2547833, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.23.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:06:56 2020]
+Error in rule fastqdump:
+    jobid: 66
+    output: output/SRR527164/RAW/SRR527164_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR527164/SRA/SRR527164.sra --threads 16 -O output/SRR527164/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547835
+
+Error executing rule fastqdump on cluster (jobid: 66, external: 2547835, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.66.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:07:15 2020]
+Error in rule fastqdump:
+    jobid: 68
+    output: output/SRR547531/RAW/SRR547531_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR547531/SRA/SRR547531.sra --threads 16 -O output/SRR547531/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547836
+
+Error executing rule fastqdump on cluster (jobid: 68, external: 2547836, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.68.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:08:29 2020]
+Error in rule fastqdump:
+    jobid: 59
+    output: output/SRR493237/RAW/SRR493237_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR493237/SRA/SRR493237.sra --threads 16 -O output/SRR493237/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547837
+
+Error executing rule fastqdump on cluster (jobid: 59, external: 2547837, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.59.sh). For error details see the cluster log and the log files of the involved rule(s).
+[Fri Oct 23 19:08:55 2020]
+Error in rule fastqdump:
+    jobid: 97
+    output: output/SRR797230/RAW/SRR797230_pass_1.fastq.gz
+    shell:
+        parallel-fastq-dump --sra-id output/SRR797230/SRA/SRR797230.sra --threads 16 -O output/SRR797230/RAW/ --split-files --gzip
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    cluster_jobid: 2547838
+
+Error executing rule fastqdump on cluster (jobid: 97, external: 2547838, jobscript: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/tmp.w1dpxg34/snakejob.fastqdump.97.sh). For error details see the cluster log and the log files of the involved rule(s).
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T182524.977517.snakemake.log

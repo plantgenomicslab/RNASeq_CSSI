@@ -1,0 +1,27 @@
+The flag 'directory' used in rule moveSRA is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	12	moveSRA
+	1	sraDownload
+	14
+
+[Sat Oct 24 16:33:13 2020]
+Job 13: ~-~ Downloading sra files... -~-
+
+Terminating processes on user request, this might take some time.
+[Sat Oct 24 16:39:25 2020]
+Error in rule sraDownload:
+    jobid: 13
+    output: output/SRA/
+    shell:
+        python src/sra_downloader.py -i data/samples.tsv -o output/SRA/
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job sraDownload since they might be corrupted:
+output/SRA/
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-24T163311.694551.snakemake.log

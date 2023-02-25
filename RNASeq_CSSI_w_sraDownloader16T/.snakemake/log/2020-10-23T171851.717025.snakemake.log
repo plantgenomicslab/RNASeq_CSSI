@@ -1,0 +1,312 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job counts:
+	count	jobs
+	1	all
+	113	fastqdump
+	113	sraDownload
+	227
+
+[Fri Oct 23 17:20:13 2020]
+Job 188: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653556/SRA/
+Submitted job 188 with external jobid '2547587'.
+
+[Fri Oct 23 17:20:13 2020]
+Job 136: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1524935/SRA/
+Submitted job 136 with external jobid '2547588'.
+
+[Fri Oct 23 17:20:13 2020]
+Job 214: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR847501/SRA/
+Submitted job 214 with external jobid '2547589'.
+
+[Fri Oct 23 17:20:14 2020]
+Job 137: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1524938/SRA/
+Submitted job 137 with external jobid '2547590'.
+
+[Fri Oct 23 17:20:14 2020]
+Job 155: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR401421/SRA/
+Submitted job 155 with external jobid '2547591'.
+
+[Fri Oct 23 17:20:14 2020]
+Job 212: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR800754/SRA/
+Submitted job 212 with external jobid '2547592'.
+
+[Fri Oct 23 17:20:14 2020]
+Job 200: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653571/SRA/
+Submitted job 200 with external jobid '2547593'.
+
+[Fri Oct 23 17:20:15 2020]
+Job 191: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653562/SRA/
+Submitted job 191 with external jobid '2547594'.
+
+[Fri Oct 23 17:20:15 2020]
+Job 161: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR446040/SRA/
+Submitted job 161 with external jobid '2547595'.
+
+[Fri Oct 23 17:20:15 2020]
+Job 186: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR584134/SRA/
+Submitted job 186 with external jobid '2547596'.
+
+[Fri Oct 23 17:20:15 2020]
+Job 126: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1105822/SRA/
+Submitted job 126 with external jobid '2547597'.
+
+[Fri Oct 23 17:20:15 2020]
+Job 169: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR493097/SRA/
+Submitted job 169 with external jobid '2547598'.
+
+[Fri Oct 23 17:20:16 2020]
+Job 158: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR446033/SRA/
+Submitted job 158 with external jobid '2547599'.
+
+[Fri Oct 23 17:20:18 2020]
+Job 135: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1261509/SRA/
+Submitted job 135 with external jobid '2547600'.
+
+[Fri Oct 23 17:20:18 2020]
+Job 122: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1019437/SRA/
+Submitted job 122 with external jobid '2547601'.
+
+[Fri Oct 23 17:20:18 2020]
+Job 171: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR493101/SRA/
+Submitted job 171 with external jobid '2547602'.
+
+[Fri Oct 23 17:20:18 2020]
+Job 167: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR477076/SRA/
+Submitted job 167 with external jobid '2547603'.
+
+[Fri Oct 23 17:20:19 2020]
+Job 179: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR527164/SRA/
+Submitted job 179 with external jobid '2547604'.
+
+[Fri Oct 23 17:20:19 2020]
+Job 194: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653565/SRA/
+Submitted job 194 with external jobid '2547605'.
+
+[Fri Oct 23 17:20:19 2020]
+Job 139: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR314813/SRA/
+Submitted job 139 with external jobid '2547606'.
+
+[Fri Oct 23 17:20:19 2020]
+Job 151: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR401417/SRA/
+Submitted job 151 with external jobid '2547607'.
+
+[Fri Oct 23 17:20:19 2020]
+Job 203: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653574/SRA/
+Submitted job 203 with external jobid '2547608'.
+
+[Fri Oct 23 17:20:20 2020]
+Job 226: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR949989/SRA/
+Submitted job 226 with external jobid '2547609'.
+
+[Fri Oct 23 17:20:20 2020]
+Job 190: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653561/SRA/
+Submitted job 190 with external jobid '2547610'.
+
+[Fri Oct 23 17:20:20 2020]
+Job 172: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR493237/SRA/
+Submitted job 172 with external jobid '2547611'.
+
+[Fri Oct 23 17:20:20 2020]
+Job 141: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR314815/SRA/
+Submitted job 141 with external jobid '2547612'.
+
+[Fri Oct 23 17:20:20 2020]
+Job 193: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653564/SRA/
+Submitted job 193 with external jobid '2547613'.
+
+[Fri Oct 23 17:20:21 2020]
+Job 170: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR493098/SRA/
+Submitted job 170 with external jobid '2547614'.
+
+[Fri Oct 23 17:20:21 2020]
+Job 209: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR797194/SRA/
+Submitted job 209 with external jobid '2547615'.
+
+[Fri Oct 23 17:20:21 2020]
+Job 218: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR847505/SRA/
+Submitted job 218 with external jobid '2547616'.
+
+[Fri Oct 23 17:20:21 2020]
+Job 134: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1260033/SRA/
+Submitted job 134 with external jobid '2547617'.
+
+[Fri Oct 23 17:20:21 2020]
+Job 154: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR401420/SRA/
+Submitted job 154 with external jobid '2547618'.
+
+[Fri Oct 23 17:20:22 2020]
+Job 132: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1207195/SRA/
+Submitted job 132 with external jobid '2547619'.
+
+[Fri Oct 23 17:20:22 2020]
+Job 215: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR847502/SRA/
+Submitted job 215 with external jobid '2547620'.
+
+[Fri Oct 23 17:20:22 2020]
+Job 173: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR493238/SRA/
+Submitted job 173 with external jobid '2547621'.
+
+[Fri Oct 23 17:20:22 2020]
+Job 201: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR653572/SRA/
+Submitted job 201 with external jobid '2547622'.
+
+[Fri Oct 23 17:20:22 2020]
+Job 217: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR847504/SRA/
+Submitted job 217 with external jobid '2547623'.
+
+[Fri Oct 23 17:20:23 2020]
+Job 166: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR477075/SRA/
+Submitted job 166 with external jobid '2547624'.
+
+[Fri Oct 23 17:20:23 2020]
+Job 127: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1105823/SRA/
+Submitted job 127 with external jobid '2547625'.
+
+[Fri Oct 23 17:20:23 2020]
+Job 211: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR800753/SRA/
+Submitted job 211 with external jobid '2547626'.
+
+[Fri Oct 23 17:20:23 2020]
+Job 213: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR833246/SRA/
+Submitted job 213 with external jobid '2547627'.
+
+[Fri Oct 23 17:20:23 2020]
+Job 180: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR527165/SRA/
+Submitted job 180 with external jobid '2547628'.
+
+[Fri Oct 23 17:20:24 2020]
+Job 223: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR949956/SRA/
+Submitted job 223 with external jobid '2547629'.
+
+[Fri Oct 23 17:20:24 2020]
+Job 163: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR446485/SRA/
+Submitted job 163 with external jobid '2547630'.
+
+[Fri Oct 23 17:20:24 2020]
+Job 210: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR797230/SRA/
+Submitted job 210 with external jobid '2547631'.
+
+[Fri Oct 23 17:20:24 2020]
+Job 165: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR446487/SRA/
+Submitted job 165 with external jobid '2547632'.
+
+[Fri Oct 23 17:20:24 2020]
+Job 128: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR1159821/SRA/
+Submitted job 128 with external jobid '2547633'.
+
+[Fri Oct 23 17:20:25 2020]
+Job 152: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR401418/SRA/
+Submitted job 152 with external jobid '2547634'.
+
+[Fri Oct 23 17:20:25 2020]
+Job 184: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR584121/SRA/
+Submitted job 184 with external jobid '2547635'.
+
+[Fri Oct 23 17:20:25 2020]
+Job 116: ~-~ Downloading sra files... -~-
+
+python src/sra_downloader.py -i data/samples.tsv -o output/SRR070570/SRA/
+Submitted job 116 with external jobid '2547636'.
+Terminating processes on user request, this might take some time.
+Will exit after finishing currently running jobs.
+Complete log: /data/gpfs/assoc/pgl/Froi/data/RNASeq_CSSI/RNASeq_CSSI_w_sraDownloader16T/.snakemake/log/2020-10-23T171851.717025.snakemake.log
